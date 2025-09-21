@@ -1,0 +1,53 @@
+{
+  "title": "Beebing",
+  "products": [
+    {
+      "image": "images/b1.webp",
+      "alt": "Dog 1",
+      "category": "Dog Food",
+      "name": "Lint Roller",
+      "price": "$28.00",
+      "button_text": "Add+"
+    },
+    {
+      "image": "images/b2.webp",
+      "alt": "Dog 2",
+      "category": "Bedding",
+      "name": "Cat Bed",
+      "price": "$28.00",
+      "button_text": "Add+"
+    },
+    {
+      "image": "images/b3.webp",
+      "alt": "Dog 3",
+      "category": "Toys",
+      "name": "Plush Toy",
+      "price": "$28.00",
+      "button_text": "Add+"
+    },
+    {
+      "image": "images/b4.webp",
+      "alt": "Dog 4",
+      "category": "Toys",
+      "name": "Fluffy Toy",
+      "price": "$28.00",
+      "button_text": "Add+"
+    },
+    {
+      "image": "images/b5.webp",
+      "alt": "Dog 5",
+      "category": "Toys",
+      "name": "Pet Bed Toy",
+      "price": "$28.00",
+      "button_text": "Add+"
+    },
+    {
+      "image": "images/b6.webp",
+      "alt": "Dog 6",
+      "category": "Toys",
+      "name": "Chew Toy",
+      "price": "$28.00",
+      "button_text": "Add+"
+    }
+  ]
+}

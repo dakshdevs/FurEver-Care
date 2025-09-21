@@ -1,0 +1,113 @@
+ body {
+        font-family: 'Poppins', sans-serif;
+        background-color: white;
+        margin: 0;
+        justify-content: center;
+    }
+.toy {
+    width: 100%;
+    text-align: center;
+    
+}
+
+.toy h1 {
+  
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    color: #3a434e;
+    font-family: 'Poppins', sans-serif; 
+}
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        justify-content: center;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .card {
+        width: 300px;   
+        background-color: white;
+        overflow: hidden;
+    }
+
+    
+
+    .card img {
+        width: 100%;
+        height: 300px;
+        transition: 1s;
+       
+    }
+    .card img:hover {
+        transform: scale(1.1);
+       
+    }
+
+    
+
+    .card-content h5 {
+        color: #797676;
+        font-size: 16px;
+        margin: 12px 0; 
+        font-family: 'Poppins', sans-serif;
+
+      
+    }
+
+    .card-content .name {
+        font-size: 25px;
+        cursor: pointer;
+        font-weight: 600;
+        color: rgb(58, 67, 78);
+        margin: 10px 0;
+        transition: 0.5s; 
+        font-family: 'Poppins', sans-serif;
+    }
+    .card-content .name:hover {
+      color: rgb(197, 32, 32);
+    }
+.price-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1px 0;
+  
+}
+
+.price-add .price {
+    font-size: 20px;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+}
+
+.add-btn {
+    padding: 6px 15px;
+    color: rgb(197, 32, 32);
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+
+
+   @media (max-width: 768px) {
+    
+        .card-container {
+            gap: 20px;
+        }
+        .card {
+            width: 78%;
+
+        }
+        .card img:hover {
+    transform: none;   /* zoom effect hat gaya */
+  }
+    }

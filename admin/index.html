@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/admin.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Loader Overlay -->
+<div id="loadingOverlay" class="loading-overlay">
+  <img src="../image/preloader.gif" alt="Loading..." class="loader-gif">
+  <p>Loading...</p>
+</div>
+
+
+
+
+<div class="header">
+    <!-- Top Info Bar -->
+<div class="top-bar">
+  <div class="scroll-text">
+    Call us: <strong>747-800-9880</strong> &nbsp; | &nbsp; 
+    Opening Hours: <strong>7:00 am - 9:00 pm (Mon - Sun)</strong>
+  </div>
+  <div class="social">
+    Follow: 
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-linkedin"></i>
+  </div>
+</div>
+
+<!-- Navbar -->
+<div class="navbar">
+
+
+  <!-- 👇 Ye naya add karna hai -->
+  <div class="toggler" id="navToggler">
+    <i class="fa fa-bars"></i>
+  </div>
+  <!-- Left: Brand -->
+  <div class="brand">FurEver Care.</div>
+
+  <!-- Center: Menu -->
+  <!-- <ul class="menu">
+    <li><a href="admin.html">Home</a></li>
+    <li>
+      <a  href="#">Pet Owner ▾</a>
+
+      <ul class="dropdown">
+        <li ><a href="../petowner/petcaresection.html">Pet Profile</a></li>
+        <li><a href="../petowner/feedback.html">Feeding Guide</a></li>
+        <li><a href="../petowner/groomingvideo.html">Grooming Videos</a></li>
+        <li><a href="../petowner/healthtips.html">Health Tips</a></li>
+        <li><a href="../petowner/training.html">Training Tips</a></li>
+        <li><a href="../petowner/petproducts/cards/beeding.html">Products</a></li>
+        <li><a href="../petowner/emergency.html">Emergency</a></li>
+        <li><a href="../petowner/feedback.html">Feedback</a></li>
+        <li><a href="../petowner/contact.html">Contact</a></li>
+        <li><a href="../petowner/about.html">About Us</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Veterinarian ▾</a>
+      <ul class="dropdown">
+        <li><a href="../veterinarin/about.html">Profile</a></li>
+        <li><a href="../veterinarin/appointment.html">Slots</a></li>
+        <li><a href="../veterinarin/casestudies.html">Case Studies</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Animal Shelter ▾</a>
+      <ul class="dropdown">
+        <li><a href="../pet_shelter/gallery.html">Adoptable Pets</a></li>
+        <li><a href="../pet_shelter/stories.html">Success Stories</a></li>
+        <li><a href="../pet_shelter/announcement.html">Events</a></li>
+        <li><a href="../pet_shelter/contact.html">Contact</a></li>
+      </ul>
+    </li>
+  </ul> -->
+
+
+  <ul class="menu">
+  <li><a href="index.html" class="nav-link">Home</a></li>
+  <li>
+    <a href="#" class="nav-link">Pet Owner ▾</a>
+    <ul class="dropdown">
+      <li><a href="../petowner/petcaresection.html" class="nav-link">Pet Profile</a></li>
+      <li><a href="../petowner/feedback.html" class="nav-link">Feeding Guide</a></li>
+      <li><a href="../petowner/groomingvideo.html" class="nav-link">Grooming Videos</a></li>
+      <li><a href="../petowner/healthtips.html" class="nav-link">Health Tips</a></li>
+      <li><a href="../petowner/training.html" class="nav-link">Training Tips</a></li>
+      <li><a href="../petowner/petproducts/cards/beeding.html" class="nav-link">Products</a></li>
+      <li><a href="../petowner/emergency.html" class="nav-link">Emergency</a></li>
+      <li><a href="../petowner/feedback.html" class="nav-link">Feedback</a></li>
+      <li><a href="../petowner/contact.html" class="nav-link">Contact</a></li>
+      <li><a href="../petowner/about.html" class="nav-link">About Us</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#" class="nav-link">Veterinarian ▾</a>
+    <ul class="dropdown">
+      <li><a href="../veterinarin/about.html" class="nav-link">Profile</a></li>
+      <li><a href="../veterinarin/appointment.html" class="nav-link">Slots</a></li>
+      <li><a href="../veterinarin/casestudies.html" class="nav-link">Case Studies</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#" class="nav-link">Animal Shelter ▾</a>
+    <ul class="dropdown">
+      <li><a href="../pet_shelter/gallery.html" class="nav-link">Adoptable Pets</a></li>
+      <li><a href="../pet_shelter/stories.html" class="nav-link">Success Stories</a></li>
+      <li><a href="../pet_shelter/announcement.html" class="nav-link">Events</a></li>
+      <li><a href="../pet_shelter/contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+
+
+<!-- Right Section -->
+<div class="right">
+  <i class="fa fa-search" id="searchIcon"></i>&nbsp; | &nbsp; 
+  <span class="username" id="userDisplay">
+    <i class="fa fa-user"></i>  Guest
+  </span>
+</div>
+
+<!-- 🔍 Search Overlay -->
+<div id="searchOverlay">
+  <span class="close-btn" id="closeSearch">&times;</span>
+  <div class="search-content">
+  <input type="text" id="searchInput" placeholder="Type to search..." />
+  <button id="searchBtn">Search</button>
+  <ul id="suggestions"></ul>  
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+<!-- Modal -->
+<div class="fc-modal-overlay" id="fcModalOverlay">
+  <div class="fc-modal-box">
+    <img src="../image/feedback.jpg" alt="">
+    <span class="fc-close-icon" onclick="fcCloseModal()">✖</span>
+    <h2>Welcome to FurEver</h2>
+    <p>Please enter your name and select category to continue:</p>
+
+    <!-- Username Input -->
+    <input type="text" id="fcUserName" placeholder="Enter your name" required 
+      style="width:100%; padding:10px; margin:10px 0; border:1px solid #ccc; border-radius:5px;">
+
+    <!-- Radio Options -->
+    <div class="fc-radio-group">
+      <label><input type="radio" name="fcUserType" value="owner" onchange="fcGoToPage(this.value)"> Pet Owner</label>
+      <label><input type="radio" name="fcUserType" value="vet" onchange="fcGoToPage(this.value)"> Veterinarian</label>
+      <label><input type="radio" name="fcUserType" value="shelter" onchange="fcGoToPage(this.value)"> Animal Shelter</label>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- home section  -->
+
+
+  <section class="home-section">
+    <div class="home-content">
+      <h1>Welcome to FurEver Care</h1>
+      <p>They Deserve Forever Love. A one-stop pet care platform to manage your pets, explore products, and connect with veterinarians & shelters.</p>
+      <button class="btn">View More</button>
+    </div>
+  </section>
+
+
+<!-- quick section cards -->
+
+
+
+
+  <section class="quick-section">
+    <div class="quick-title">
+      <h2>Quick Actions</h2>
+      <p>Select an option to continue</p>
+    </div>
+
+    <div class="card-container">
+      <!-- Card 1 -->
+      <div class="card animate">
+        <h3>Care Companion</h3>
+        <p>Keep track of profiles, routines, and essential info all in one place.</p>
+        <button>Open</button>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card animate">
+        <h3>Health Advisor</h3>
+        <p>Review case studies, appointments, and provide timely consultations.</p>
+        <button>Open</button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card animate">
+        <h3>Adoption Hub</h3>
+        <p>Showcase available companions, share events, and manage listings.</p>
+        <button>Open</button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  
+  <!-- about us  -->
+
+   <section class="aboutus-section">
+    <h1 class="aboutus-title">About Us</h1>
+    <p class="aboutus-intro">
+      Welcome to <strong>FurEver Care</strong> – a dedicated platform for Pet Owners. 
+      Our mission is to make pet care easier, smarter, and more fun. 
+      Here you will find guidance on feeding, grooming, training, and health care tips, 
+      along with product recommendations and emergency support.  
+    </p>
+
+    <h2 style="text-align:center; margin-bottom:20px;">Our Team</h2>
+    <div class="aboutus-team">
+      <div class="aboutus-member animate slide-left">
+        <img src="../image/1 dog.jpg" alt="Ali">
+        <h3>Ali</h3>
+        <p>Frontend Developer</p>
+      </div>
+      <div class="aboutus-member animate slide-bottom">
+        <img src="../image/2 dog.jpg" alt="Sana">
+        <h3>Sana</h3>
+        <p>UI/UX Designer</p>
+      </div>
+      <div class="aboutus-member animate slide-bottom">
+        <img src="../image/3 dog.jpg" alt="Ahmed">
+        <h3>Ahmed</h3>
+        <p>Content Specialist</p>
+      </div>
+      <div class="aboutus-member animate slide-right">
+        <img src="../image/4 dog.jpg" alt="Hira">
+        <h3>Hira</h3>
+        <p>Project Manager</p>
+      </div>
+    </div>
+  </section>
+
+<!-- Why Choose Us Section -->
+<section class="whychoose-section">
+  <div class="whychoose-container">
+    <h3 class="whychoose-subtitle">Why Choose Us?</h3>
+    <h2 class="whychoose-title">Best Service to Breeds Your Loved Dog Explore</h2>
+
+    <div class="whychoose-cards">
+      <div class="whychoose-card">
+        <h3>75%</h3>
+        <p>DOGS ARE FIRST BRED</p>
+      </div>
+      <div class="whychoose-card">
+        <h3>259+</h3>
+        <p>MOST DOGS ARE FIRST</p>
+      </div>
+      <div class="whychoose-card">
+        <h3>39K</h3>
+        <p>DOG BREEDING</p>
+      </div>
+      <div class="whychoose-card">
+        <h3>45+</h3>
+        <p>YEARS OF HISTORY</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  <div class="vet-container">
+    <h2>Our Veterinarians</h2>
+
+    <div class="vet-profile animate slide-left">
+      <img src="../image/femaledoctor.jpg" alt="Vet Photo">
+      <div class="vet-info">
+        <h3>Dr. Sarah Khan</h3>
+        <p>Specialization: Veterinary Dermatology</p>
+        <div class="contact">
+          <p><i class="fa-solid fa-phone"></i> +92 300 1234567</p>
+          <p><i class="fa-solid fa-envelope"></i> sarah.vet@example.com</p>
+          <p><i class="fa-solid fa-location-dot"></i> Karachi, Pakistan</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="vet-profile animate slide-left">
+      <img src="../image/maledoctor.jpg" alt="Vet Photo">
+      <div class="vet-info">
+        <h3>Dr. Ahmed Ali</h3>
+        <p>Specialization: Veterinary Surgery</p>
+        <div class="contact">
+          <p><i class="fa-solid fa-phone"></i> +92 333 9876543</p>
+          <p><i class="fa-solid fa-envelope"></i> ahmed.surgeon@example.com</p>
+          <p><i class="fa-solid fa-location-dot"></i> Lahore, Pakistan</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="vet-profile animate slide-left">
+      <img src="../image/femaledoctor2.jpg" alt="Vet Photo">
+      <div class="vet-info">
+        <h3>Dr. Mehwish Raza</h3>
+        <p>Specialization: Veterinary Dentistry</p>
+        <div class="contact">
+          <p><i class="fa-solid fa-phone"></i> +92 321 6547890</p>
+          <p><i class="fa-solid fa-envelope"></i> mehwish.dentist@example.com</p>
+          <p><i class="fa-solid fa-location-dot"></i> Islamabad, Pakistan</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  
+
+  <div class="appointment-wrapper">
+    <h2 class="appointment-heading">Appointment</h2>
+
+    <div class="appointment-container">
+      <!-- Left Side Static Data -->
+      <div class="appointment-left">
+        <h3>Book Appointment</h3>
+        <p>✔️ Choose your preferred timing</p>
+        <p>✔️ Consult with certified veterinarians</p>
+        <p>✔️ Get instant confirmation</p>
+
+        <h3>Available Timings</h3>
+        <p>09:00 AM – 11:00 AM</p>
+        <p>01:00 PM – 03:00 PM</p>
+        <p>05:00 PM – 07:00 PM</p>
+
+        <h3>Contact Info</h3>
+        <p>📞 +92 300 1234567</p>
+        <p>📧 vetcare@example.com</p>
+      </div>
+
+      <!-- Right Side Form -->
+      <div class="appointment-right">
+        <h3>Fill Your Details</h3>
+        <form class="appointment-form">
+          <input type="text" placeholder="Enter your name" required>
+          <input type="email" placeholder="Enter your email" required>
+          <input type="password" placeholder="Enter your password" required>
+          <button type="submit">Book Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  
+<!-- 📞 Contact Section -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p class="intro">Have any questions or need help? Get in touch with us.</p>
+
+  <!-- Contact Info Cards -->
+  <div class="contact-cards">
+    <div class="card">
+      <i class="fas fa-phone-alt"></i>
+      <h4>Phone</h4>
+      <p>+92-321-1112223</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-envelope"></i>
+      <h4>Email</h4>
+      <p>support@furever.com</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-map-marker-alt"></i>
+      <h4>Location</h4>
+      <p>DHA Phase 5, Karachi</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-clock"></i>
+      <h4>Working Hours</h4>
+      <p>Mon–Sat: 9AM–8PM</p>
+    </div>
+  </div>
+
+  <!-- Contact Layout: Map + Form -->
+  <div class="contact-layout">
+    <!-- Left: Map -->
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.882474138943!2d67.05793967470234!3d24.80296297795506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33dcda1c1f0df%3A0x8b2d8ef6e8f8c2a!2sDHA%20Phase%205%20Karachi!5e0!3m2!1sen!2s!4v1694512345678!5m2!1sen!2s" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <!-- Right: Form -->
+    <div class="contact-form">
+      <h3>Get in Touch</h3>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h3>About Us</h3>
+        <p>
+          Welcome to our Pet Care Portal. We provide resources and support for pet owners, veterinarians, and animal shelters.
+        </p>
+      </div>
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Pet Owner</a></li>
+          <li><a href="#">Veterinarians</a></li>
+          <li><a href="#">Animal Shelters</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section contact">
+        <h3>Contact Info</h3>
+        <p>Email: support@petcareportal.com</p>
+        <p>Phone: +1 234 567 890</p>
+        <p>Address: 123 Pet Street, Animal City</p>
+      </div>
+      <div class="footer-section social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Pet Care Portal. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+
+  <div id="pageOverlay"></div>
+
+<script src="js/admin.js"></script>
+<script>
+  // Wait for DOM Ready
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".nav-link").forEach(link => {
+      link.addEventListener("click", function(e){
+        e.preventDefault();
+        fcOpenModal();
+
+        // store clicked link href
+        const target = link.getAttribute("href");
+        document.getElementById("fcModalOverlay").setAttribute("data-target", target);
+      });
+    });
+
+
+    // 🔍 Search icon click se bhi modal open ho
+const searchIcon = document.getElementById("searchIcon");
+if(searchIcon){
+  searchIcon.addEventListener("click", function(e){
+    e.preventDefault();
+    fcOpenModal();
+
+    // agar search ke liye specific target chahiye
+    document.getElementById("fcModalOverlay").setAttribute("data-target", "../search.html");
+  });
+}
+
+    // Show user name if available
+    const userName = localStorage.getItem("fcUserName");
+    if(userName){
+      const displayEl = document.getElementById("userDisplay");
+      if(displayEl){
+        displayEl.textContent = "👤 " + userName;
+      }
+    }
+  }
+);
+
+  function fcOpenModal(){
+    document.getElementById("fcModalOverlay").style.display = "flex";
+  }
+
+  function fcCloseModal(){
+    document.getElementById("fcModalOverlay").style.display = "none";
+  }
+
+  function fcGoToPage(type){
+    const name = document.getElementById("fcUserName").value.trim();
+
+    if(name === ""){
+      alert("⚠️ Please enter your name first.");
+      return;
+    }
+
+    // naam save karo
+    localStorage.setItem("fcUserName", name);
+
+    fcCloseModal();
+
+    // Redirect based on radio
+    if(type === "owner"){
+      window.location.href = "../petowner/petcaresection.html";
+    } else if(type === "vet"){
+      window.location.href = "../veterinarin/about.html";
+    } else if(type === "shelter"){
+      window.location.href = "../pet_shelter/gallery.html";
+    } else {
+      // fallback original target
+      const modal = document.getElementById("fcModalOverlay");
+      const target = modal.getAttribute("data-target");
+      if(target && target !== "#"){
+        window.location.href = target;
+      }
+    }
+  }
+</script>
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const userName = localStorage.getItem("fcUserName");
+  if(userName){
+    const displayEl = document.getElementById("userDisplay");
+    if(displayEl){
+      displayEl.innerHTML = '<i class="fa fa-user"></i> ' + userName;
+    }
+  }
+});
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

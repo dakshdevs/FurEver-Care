@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/feedingguide.css">
+     <link rel="stylesheet" href="../petowner/css/feedback.css">
+     <link rel="stylesheet" href="../petowner/css/feedback.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    
+<div class="header">
+    <!-- Top Info Bar -->
+<div class="top-bar">
+  <div class="scroll-text">
+    Call us: <strong>747-800-9880</strong> &nbsp; | &nbsp; 
+    Opening Hours: <strong>7:00 am - 9:00 pm (Mon - Sun)</strong>
+  </div>
+  <div class="social">
+    Follow: 
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-linkedin"></i>
+  </div>
+</div>
+
+<!-- Navbar -->
+<div class="navbar">
+
+
+  <!-- 👇 Ye naya add karna hai -->
+  <div class="toggler" id="navToggler">
+    <i class="fa fa-bars"></i>
+  </div>
+  <!-- Left: Brand -->
+  <div class="brand">FurEver Care.</div>
+
+  <!-- Center: Menu -->
+   <ul class="menu">
+    <li><a href="./about.html">About</a></li>
+    <li>
+      <a href="#">Pet Care Sections ▾</a>
+      <ul class="dropdown">
+        <li><a href="../petowner/petcaresection.html">Pet Profile</a></li>
+        <li><a href="../petowner/feedingguide.html">Feeding Guide</a></li>
+        <li><a href="../petowner/groomingvideo.html">Grooming Videos</a></li>
+        <li><a href="../petowner/healthtips.html">Health Tips</a></li>
+        <li><a href="../petowner/training.html">Training Tips</a></li>
+      
+      </ul>
+    </li>
+    <li>
+      <a href="#">Pet Products Showcase ▾</a>
+      <ul class="dropdown">
+         <li><a href="./food.html">Dog/Cat Food</a></li>
+        <li><a href="./index.html">Toys</a></li>
+        <li><a href="./groomig.html">Grooming Essentials</a></li>
+        <li><a href="./beeding.html">Bedding and Apparel</a></li>
+        <li><a href="./health.html">Health Supplements</a></li>
+      
+      </ul>
+    </li>
+    <li><a href="./emergency.html">Emergency</a></li>
+    
+   
+    <li><a href="./feedback.html">Feedback</a></li>
+    <li><a href="./contact.html">Contact Us</a></li>
+    
+  </ul>
+
+<!-- Right Section -->
+<div class="right">
+  <i class="fa fa-search" id="searchIcon"></i>&nbsp; | &nbsp; 
+  <span class="username" id="userDisplay">👤 Guest</span>
+</div>
+
+<!-- 🔍 Search Overlay -->
+<div id="searchOverlay">
+  <span class="close-btn" id="closeSearch">&times;</span>
+  <div class="search-content">
+  <input type="text" id="searchInput" placeholder="Type to search..." />
+  <button id="searchBtn">Search</button>
+  <ul id="suggestions"></ul>  
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<!-- home section  -->
+
+
+  <section class="home-section" style="padding-left: 30px;">
+    <div class="home-content">
+      <h1 style="font-size: 40px;">Feeding Guide</h1>
+      <p >They Deserve Forever Love. A one-stop pet care platform to manage your pets, explore products, and connect with veterinarians & shelters.</p>
+      <button class="btn">View More</button>
+    </div>
+  </section>
+
+  <!-- Feeding Guide Section -->
+<section class="feeding-guide-section">
+  <div class="feeding-container">
+    <h2 class="feeding-title">Pet Feeding Guide</h2>
+    <p class="feeding-subtitle" style="margin-top: 30px;">Comprehensive nutrition guidance for every life stage</p>
+
+    <!-- Tabs -->
+    <div class="feeding-tabs">
+      <button class="tab-btn active" data-tab="puppy">Puppies</button>
+      <button class="tab-btn" data-tab="adult-dog">Adult Dogs</button>
+      <button class="tab-btn" data-tab="cats">Cats</button>
+    </div>
+
+    <!-- Content Wrapper -->
+    <div class="feeding-wrapper">
+
+      <!-- Puppies -->
+      <div class="feeding-content active" id="puppy">
+        <div class="feeding-row">
+          <div class="feeding-img">
+            <img src="../image/petprofilesection.jpg" alt="Puppy Feeding">
+          </div>
+          <div class="feeding-text">
+            <h3>Puppies</h3>
+            <p>Puppies grow very quickly and need nutrient-dense food for bones, muscles, and brain development. Frequent small meals prevent low blood sugar and help them stay energetic.</p>
+            <ul>
+              <li><strong>8–12 weeks:</strong> 4 meals/day, soft or soaked puppy kibble.</li>
+              <li><strong>3–6 months:</strong> 3 meals/day, introduce balanced dry + wet food.</li>
+              <li><strong>6–12 months:</strong> 2–3 meals/day, portion by breed and weight.</li>
+            </ul>
+            <p>Best practice: Choose food labeled as “puppy formula” with added DHA for brain health.</p>
+            <p class="tip">Tip: Avoid cow’s milk — it can upset puppy stomachs. Stick to water and vet-approved milk replacers if needed.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Adult Dogs -->
+      <div class="feeding-content" id="adult-dog">
+        <div class="feeding-row">
+          <div class="feeding-img">
+            <img src="../image/petprofilesectionimage.webp" alt="Adult Dog Feeding">
+          </div>
+          <div class="feeding-text">
+            <h3>Adult Dogs</h3>
+            <p>Adult dogs require a stable, portion-controlled diet to maintain muscle tone and energy. Their needs vary by breed size, metabolism, and activity levels.</p>
+            <ul>
+              <li><strong>Small breeds:</strong> 2 meals/day (1–1.5 cups total).</li>
+              <li><strong>Medium breeds:</strong> 2 meals/day (2–2.5 cups total).</li>
+              <li><strong>Large breeds:</strong> 2 meals/day (3–4 cups total, divided).</li>
+            </ul>
+            <p>Always measure food with a cup instead of guessing. Switch to a senior diet after 7 years to support joints and digestion.</p>
+            <p class="tip">Tip: Mix dry kibble with small amounts of wet food for taste variety, but avoid table scraps — they cause obesity.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cats -->
+      <div class="feeding-content" id="cats">
+        <div class="feeding-row">
+          <div class="feeding-img">
+            <img src="../image/cats.jpg" alt="Cat Feeding">
+          </div>
+          <div class="feeding-text">
+            <h3>Cats</h3>
+            <p>Cats are obligate carnivores — they thrive on high-protein meals and low carbs. Indoor cats especially need portion control to avoid obesity.</p>
+            <ul>
+              <li><strong>Kittens:</strong> 3–4 meals/day with kitten-specific wet food.</li>
+              <li><strong>Adult cats:</strong> 2 meals/day (dry + wet mix, 1/2–3/4 cup daily).</li>
+              <li><strong>Seniors:</strong> 2–3 small meals/day, with added omega-3 for joints.</li>
+            </ul>
+            <p>Wet food helps hydration since cats naturally drink less water. Always keep fresh water bowls available at different spots in the home.</p>
+            <p class="tip">Tip: Avoid feeding cats dog food — it lacks taurine, which is essential for their heart and vision.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+ <!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h3>About Us</h3>
+        <p>
+          Welcome to our Pet Care Portal. We provide resources and support for pet owners, veterinarians, and animal shelters.
+        </p>
+      </div>
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Pet Owner</a></li>
+          <li><a href="#">Veterinarians</a></li>
+          <li><a href="#">Animal Shelters</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section contact">
+        <h3>Contact Info</h3>
+        <p>Email: support@petcareportal.com</p>
+        <p>Phone: +1 234 567 890</p>
+        <p>Address: 123 Pet Street, Animal City</p>
+      </div>
+      <div class="footer-section social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Pet Care Portal. All rights reserved.</p>
+    </div>
+  </footer>
+
+<!-- home section  end  -->
+
+
+
+<script src="./js/script.js"></script>
+
+
+<script>document.addEventListener("DOMContentLoaded", () => {
+  const userName = localStorage.getItem("fcUserName");
+  if(userName){
+    const displayEl = document.getElementById("userDisplay");
+    if(displayEl){
+      displayEl.textContent = "👤 " + userName;
+    }
+  }
+});</script>
+</body>
+</html>

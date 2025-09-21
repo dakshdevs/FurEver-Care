@@ -1,0 +1,59 @@
+{
+  "title": "Grooming Essentials",
+  "products": [
+    {
+      "image": "images/g1.webp",
+      "alt": "Lint Roller for Pets",
+      "category": "Grooming Tools",
+      "name": "Pet Lint Roller",
+      "price": "$12.00",
+      "description": "Remove pet hair and lint from your pet's fur and your furniture with this easy-to-use lint roller.",
+      "button_text": "Add+"
+    },
+    {
+      "image": "images/g2.webp",
+      "alt": "Bath Glove for Pets",
+      "category": "Grooming Tools",
+      "name": "Pets Bath Glove",
+      "price": "$18.00",
+      "description": "A soft, flexible glove designed to gently massage your pet while bathing. Perfect for cleaning and grooming.",
+      "button_text": "Add+"
+    },
+    {
+      "image": "images/g3.webp",
+      "alt": "Steamer Brush for Grooming",
+      "category": "Grooming Tools",
+      "name": "Steamer Grooming Brush",
+      "price": "$45.00",
+      "description": "A grooming brush that uses steam to help detangle and clean your pet’s fur while giving a soothing massage.",
+      "button_text": "Add+"
+    },
+    {
+      "image": "images/g4.jpg",
+      "alt": "Fur Detangler Comb",
+      "category": "Grooming Tools",
+      "name": "Fur Detangler Comb",
+      "price": "$22.00",
+      "description": "A specialized comb designed to detangle thick fur without causing discomfort to your pet.",
+      "button_text": "Add+"
+    },
+    {
+      "image": "images/g5.jpeg",
+      "alt": "Pet Nail Clipper",
+      "category": "Grooming Tools",
+      "name": "Pet Nail Clipper",
+      "price": "$15.00",
+      "description": "Trimming your pet's nails is now easier with this sharp, safe, and easy-to-use pet nail clipper.",
+      "button_text": "Add+"
+    },
+    {
+      "image": "images/g6.jpg",
+      "alt": "Pet Shampoo Brush",
+      "category": "Grooming Tools",
+      "name": "Pet Shampoo Brush",
+      "price": "$20.00",
+      "description": "Massage and apply shampoo to your pet’s coat with this easy-to-hold shampoo brush, ensuring an even and effective wash.",
+      "button_text": "Add+"
+    }
+  ]
+}

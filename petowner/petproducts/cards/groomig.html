@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Cards</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../css/about.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+  
+<div class="header">
+    <!-- Top Info Bar -->
+<div class="top-bar">
+  <div class="scroll-text">
+    Call us: <strong>747-800-9880</strong> &nbsp; | &nbsp; 
+    Opening Hours: <strong>7:00 am - 9:00 pm (Mon - Sun)</strong>
+  </div>
+  <div class="social">
+    Follow: 
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-linkedin"></i>
+  </div>
+</div>
+
+<!-- Navbar -->
+<div class="navbar">
+
+
+  <!-- 👇 Ye naya add karna hai -->
+  <div class="toggler" id="navToggler">
+    <i class="fa fa-bars"></i>
+  </div>
+  <!-- Left: Brand -->
+  <div class="brand">FurEver Care.</div>
+
+  <!-- Center: Menu -->
+  <ul class="menu">
+    <li><a href="./about.html">About</a></li>
+    <li>
+      <a href="#">Pet Care Sections ▾</a>
+      <ul class="dropdown">
+        <li><a href="../petowner/petcaresection.html">Pet Profile</a></li>
+        <li><a href="../petowner/feedingguide.html">Feeding Guide</a></li>
+        <li><a href="../petowner/groomingvideo.html">Grooming Videos</a></li>
+        <li><a href="../petowner/healthtips.html">Health Tips</a></li>
+        <li><a href="../petowner/training.html">Training Tips</a></li>
+      
+      </ul>
+    </li>
+    <li>
+      <a href="#">Pet Products Showcase ▾</a>
+      <ul class="dropdown">
+        <li><a href="./beeding.html">Dog/Cat Food</a></li>
+        <li><a href="./index.html">Toys</a></li>
+        <li><a href="./groomig.html">Grooming Essentials</a></li>
+        <li><a href="./beeding.html">Bedding and Apparel</a></li>
+        <li><a href="./health.html">Health Supplements</a></li>
+      
+      </ul>
+    </li>
+    <li><a href="./emergency.html">Emergency</a></li>
+    
+    <li><a href="./food.html">Products</a></li>
+    <li><a href="./feedback.html">Feedback</a></li>
+    <li><a href="./contact.html">Contact Us</a></li>
+    
+  </ul>
+
+<!-- Right Section -->
+<div class="right">
+  <i class="fa fa-search" id="searchIcon"></i>&nbsp; | &nbsp; 
+  <span class="username" id="userDisplay">👤 Guest</span>
+</div>
+
+<!-- 🔍 Search Overlay -->
+<div id="searchOverlay">
+  <span class="close-btn" id="closeSearch">&times;</span>
+  <div class="search-content">
+  <input type="text" id="searchInput" placeholder="Type to search..." />
+  <button id="searchBtn">Search</button>
+  <ul id="suggestions"></ul>  
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="toy">
+        <h1>Grooming Essentials</h1>
+    </div>
+
+    <div class="card-container" id="card-container">
+        
+    </div>
+
+    <script>
+     
+      fetch('Json/grooming.json')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json(); 
+        })
+        .then(data => {
+          
+          const cardContainer = document.getElementById('card-container');
+       
+          data.products.forEach(product => {
+           
+            const cardHTML = `
+              <div class="card">
+                <img src="${product.image}" alt="${product.alt}">
+                <div class="card-content">
+                    <h5>${product.category}</h5>
+                    <p class="name">${product.name}</p>
+                    <div class="price-add">
+                        <p class="price">${product.price}</p>
+                        <button class="add-btn">${product.button_text}</button>
+                    </div>
+                </div>
+              </div>
+            `;
+            
+           
+            cardContainer.innerHTML += cardHTML;
+          });
+        })
+        .catch(error => {
+          console.error('Error fetching the JSON file:', error);
+          
+          document.getElementById('card-container').innerHTML = '<p>Failed to load product data.</p>';
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

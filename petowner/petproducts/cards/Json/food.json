@@ -1,0 +1,60 @@
+{
+    "title": "Dog/Cat Food",
+    "products": [
+      {
+        "image": "images/f1.webp",
+        "alt": "Dog Food Chicken",
+        "category": "Dog Food",
+        "name": "Chicken Feast",
+        "price": "$28.00",
+        "description": "Real chicken for a healthy diet.",
+        "button_text": "Add+"
+      },
+      {
+        "image": "images/f2.webp",
+        "alt": "Pet Food 1",
+        "category": "Dog Food",
+        "name": "Healthy Treats",
+        "price": "$28.00",
+        "description": "Nutritious treats for happy pets.",
+        "button_text": "Add+"
+      },
+      {
+        "image": "images/f3.webp",
+        "alt": "Pet Food 2",
+        "category": "Dog Food",
+        "name": "Energy Boost",
+        "price": "$28.00",
+        "description": "Fuel for active dogs and cats.",
+        "button_text": "Add+"
+      },
+      {
+        "image": "images/f4.webp",
+        "alt": "Pet Food 2",
+        "category": "Dog Food",
+        "name": "Active Nutrition",
+        "price": "$28.00",
+        "description": "Vitamins and minerals for pets.",
+        "button_text": "Add+"
+      },
+      {
+        "image": "images/f5.webp",
+        "alt": "Pet Food 2",
+        "category": "Dog Food",
+        "name": "Pet Delights",
+        "price": "$28.00",
+        "description": "Tasty and healthy for your pets.",
+        "button_text": "Add+"
+      },
+      {
+        "image": "images/f6.jpg",
+        "alt": "Pet Food 2",
+        "category": "Dog Food",
+        "name": "Vitality Food",
+        "price": "$28.00",
+        "description": "Protein-rich for overall health.",
+        "button_text": "Add+"
+      }
+    ]
+  }
+  

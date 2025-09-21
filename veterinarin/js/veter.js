@@ -1,0 +1,171 @@
+const searchIcon = document.getElementById("searchIcon");
+  const searchOverlay = document.getElementById("searchOverlay");
+  const closeSearch = document.getElementById("closeSearch");
+  const searchInput = document.getElementById("searchInput");
+  const searchBtn = document.getElementById("searchBtn");
+  const suggestionsBox = document.getElementById("suggestions");
+
+  // ✅ Search keywords + synonyms
+  const searchMap = {
+    "home": "#home",
+    "pet profile": "#owner-profile",
+    "dog profile": "#owner-profile",
+    "cat profile": "#owner-profile",
+    "feeding guide": "#owner-feeding",
+    "grooming": "#owner-grooming",
+    "health tips": "#owner-health",
+    "medicine": "#owner-health",
+    "training": "#owner-training",
+    "products": "#owner-products",
+    "emergency": "#owner-emergency",
+    "feedback": "#owner-feedback",
+    "contact": "#owner-contact",
+    "about": "#owner-about",
+    "vet": "#vet-profile",
+    "doctor": "#vet-profile",
+    "veterinarian": "#vet-profile",
+    "slots": "#vet-slots",
+    "case studies": "#vet-cases",
+    "adopt": "#shelter-adopt",
+    "adopt dog": "#shelter-adopt",
+    "adopt cat": "#shelter-adopt",
+    "stories": "#shelter-stories",
+    "events": "#shelter-events",
+    "shelter contact": "#shelter-contact"
+  };
+
+  // Open overlay
+  searchIcon.addEventListener("click", () => {
+    searchOverlay.style.display = "flex";
+    searchInput.focus();
+  });
+
+  // Close overlay
+  closeSearch.addEventListener("click", () => {
+    searchOverlay.style.display = "none";
+    searchInput.value = "";
+    suggestionsBox.innerHTML = "";
+  });
+
+  // Generate suggestions while typing
+  searchInput.addEventListener("input", () => {
+    let query = searchInput.value.toLowerCase().trim();
+    suggestionsBox.innerHTML = "";
+
+    if (query.length === 0) return;
+
+    for (let key in searchMap) {
+      if (key.includes(query)) {
+        let li = document.createElement("li");
+        li.textContent = key;
+        li.onclick = () => {
+          window.location.hash = searchMap[key];
+          searchOverlay.style.display = "none";
+          searchInput.value = "";
+          suggestionsBox.innerHTML = "";
+        };
+        suggestionsBox.appendChild(li);
+      }
+    }
+  });
+
+  // Direct search button / Enter
+  function handleSearch() {
+    let query = searchInput.value.toLowerCase().trim();
+    let found = false;
+
+    for (let key in searchMap) {
+      if (query.includes(key)) {  // partial match
+        window.location.hash = searchMap[key];
+        found = true;
+        break;
+      }
+    }
+
+    if (!found) {
+      alert("No results found. Try again!");
+    }
+
+    searchOverlay.style.display = "none";
+    searchInput.value = "";
+    suggestionsBox.innerHTML = "";
+  }
+
+  searchBtn.addEventListener("click", handleSearch);
+  searchInput.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") handleSearch();
+  });
+
+
+
+  // for search bar closing 
+
+
+
+// Close overlay if user clicks ANYWHERE except inside search-content or suggestions
+document.addEventListener("click", (e) => {
+  if (searchOverlay.style.display === "flex") {
+    // Agar click search-content ya suggestions ke andar hua → ignore
+    if (
+      e.target.closest(".search-content") || 
+      e.target.closest("#suggestions")
+    ) {
+      return;
+    }
+
+    // Agar click search icon pe hua → ignore (open/close ka apna logic chalega)
+    if (e.target === searchIcon) {
+      return;
+    }
+
+    // Baki kahin bhi click hote hi → overlay close
+    searchOverlay.style.display = "none";
+    searchInput.value = "";
+    suggestionsBox.innerHTML = "";
+  }
+});
+
+
+
+
+
+// navbar  toggler button 
+
+const navToggler = document.getElementById('navToggler');
+const menu = document.querySelector('.menu');
+
+navToggler.addEventListener('click', (e) => {
+  e.stopPropagation();
+  menu.classList.toggle('show');
+});
+
+// Close menu on outside click
+document.addEventListener('click', (e) => {
+  if (
+    menu.classList.contains('show') &&
+    !menu.contains(e.target) &&
+    e.target !== navToggler
+  ) {
+    menu.classList.remove('show');
+  }
+});
+
+// Handle link clicks
+menu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', (e) => {
+    const parentLi = link.parentElement;
+    const hasDropdown = parentLi.querySelector('.dropdown');
+
+    if (hasDropdown) {
+      // Agar is link ke andar dropdown hai toh menu close mat karo
+      e.preventDefault(); 
+      // optional: yaha tum dropdown toggle karne ka code likh sakte ho
+    } else {
+      // Normal link → menu band kar do
+      menu.classList.remove('show');
+    }
+  });
+});
+
+
+

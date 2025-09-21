@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="admin/css/admin.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      
 </head>
 <body>
 
   <!-- Loader Overlay -->
 <div id="loadingOverlay" class="loading-overlay">
-  <img src="../image/preloader.gif" alt="Loading..." class="loader-gif">
-  <p>Loading...</p>
+  <img src="image/preloader.gif" alt="Loading..." class="loader-gif">
+  <p style="font-family: 'Open Sans', sans-serif;">Loading...</p>
 </div>
 
 
@@ -44,7 +44,7 @@
     <i class="fa fa-bars"></i>
   </div>
   <!-- Left: Brand -->
-  <div class="brand">FurEver Care.</div>
+  <div class="brand"><a href="index.html" style="color: #333; text-decoration: none;">FurEver Care.</a></div>
 
   <!-- Center: Menu -->
   <!-- <ul class="menu">
@@ -86,7 +86,7 @@
 
 
   <ul class="menu">
-  <li><a href="index.html" class="nav-link">Home</a></li>
+  <li><a href="index.html">Home</a></li>
   <li>
     <a href="#" class="nav-link">Pet Owner ▾</a>
     <ul class="dropdown">
@@ -155,7 +155,7 @@
 <!-- Modal -->
 <div class="fc-modal-overlay" id="fcModalOverlay">
   <div class="fc-modal-box">
-    <img src="../image/feedback.jpg" alt="">
+    <img src="image/feedback.jpg" alt="">
     <span class="fc-close-icon" onclick="fcCloseModal()">✖</span>
     <h2>Welcome to FurEver</h2>
     <p>Please enter your name and select category to continue:</p>
@@ -250,22 +250,22 @@
     <h2 style="text-align:center; margin-bottom:20px;">Our Team</h2>
     <div class="aboutus-team">
       <div class="aboutus-member animate slide-left">
-        <img src="../image/1 dog.jpg" alt="Ali">
+        <img src="image/1 dog.jpg" alt="Ali">
         <h3>Ali</h3>
         <p>Frontend Developer</p>
       </div>
       <div class="aboutus-member animate slide-bottom">
-        <img src="../image/2 dog.jpg" alt="Sana">
+        <img src="image/2 dog.jpg" alt="Sana">
         <h3>Sana</h3>
         <p>UI/UX Designer</p>
       </div>
       <div class="aboutus-member animate slide-bottom">
-        <img src="../image/3 dog.jpg" alt="Ahmed">
+        <img src="image/3 dog.jpg" alt="Ahmed">
         <h3>Ahmed</h3>
         <p>Content Specialist</p>
       </div>
       <div class="aboutus-member animate slide-right">
-        <img src="../image/4 dog.jpg" alt="Hira">
+        <img src="image/4 dog.jpg" alt="Hira">
         <h3>Hira</h3>
         <p>Project Manager</p>
       </div>
@@ -308,7 +308,7 @@
     <h2>Our Veterinarians</h2>
 
     <div class="vet-profile animate slide-left">
-      <img src="../image/femaledoctor.jpg" alt="Vet Photo">
+      <img src="image/femaledoctor.jpg" alt="Vet Photo">
       <div class="vet-info">
         <h3>Dr. Sarah Khan</h3>
         <p>Specialization: Veterinary Dermatology</p>
@@ -321,7 +321,7 @@
     </div>
 
     <div class="vet-profile animate slide-left">
-      <img src="../image/maledoctor.jpg" alt="Vet Photo">
+      <img src="image/maledoctor.jpg" alt="Vet Photo">
       <div class="vet-info">
         <h3>Dr. Ahmed Ali</h3>
         <p>Specialization: Veterinary Surgery</p>
@@ -334,7 +334,7 @@
     </div>
 
     <div class="vet-profile animate slide-left">
-      <img src="../image/femaledoctor2.jpg" alt="Vet Photo">
+      <img src="image/femaledoctor2.jpg" alt="Vet Photo">
       <div class="vet-info">
         <h3>Dr. Mehwish Raza</h3>
         <p>Specialization: Veterinary Dentistry</p>
@@ -497,7 +497,7 @@
 
   <div id="pageOverlay"></div>
 
-<script src="js/admin.js"></script>
+<script src="admin/js/admin.js"></script>
 <script>
   // Wait for DOM Ready
   document.addEventListener("DOMContentLoaded", () => {
@@ -559,11 +559,11 @@ if(searchIcon){
 
     // Redirect based on radio
     if(type === "owner"){
-      window.location.href = "../petowner/petcaresection.html";
+      window.location.href = "petowner/petcaresection.html";
     } else if(type === "vet"){
-      window.location.href = "../veterinarin/about.html";
+      window.location.href = "veterinarin/about.html";
     } else if(type === "shelter"){
-      window.location.href = "../pet_shelter/gallery.html";
+      window.location.href = "pet_shelter/gallery.html";
     } else {
       // fallback original target
       const modal = document.getElementById("fcModalOverlay");

@@ -7,7 +7,7 @@
   const suggestionsBox = document.getElementById("suggestions");
 
   const searchMap = {
-    "home": "#home",
+    "home": "index.html",
     "pet profile": "#owner-profile",
     "dog profile": "#owner-profile",
     "cat profile": "#owner-profile",

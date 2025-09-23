@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
+   <!-- Loader Overlay -->
+<div id="loadingOverlay" class="loading-overlay">
+  <img src="../image/preloader.gif" alt="Loading..." class="loader-gif">
+  <p style="font-family: 'Open Sans', sans-serif;">Loading...</p>
+</div>
     
 <div class="header">
     <!-- Top Info Bar -->
@@ -34,17 +40,15 @@
     <i class="fa fa-bars"></i>
   </div>
   <!-- Left: Brand -->
-  <div class="brand">FurEver Care.</div>
+  <div class="brand"><a href="../index.html" style="color: #333; text-decoration: none;">FurEver Care.</a></div>
 
  <!-- Center: Menu -->
   <ul class="menu">
-    <li><a href="../veterinarin/about.html"></a></li>
-    <li><a href="../veterinarin/about.html">About</a></li>
-    <li><a href="../veterinarin/profile.html">Profile</a></li>
-    <li><a href="../veterinarin/casestudies.html">Case Studies</a></li>
-    <li><a href="../veterinarin/appointment.html">Appoinment</a></li>
-    <li><a href="../veterinarin/contact.html">Contact Us</a></li>
-    <li><a href="../veterinarin/contact.html">Contact Us</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#veterinarian">Profile</a></li>
+    <li><a href="#vetercasestudies">Case Studies</a></li>
+    <li><a href="#appointment">Appoinment</a></li>
+    <li><a href="#contact">Contact Us</a></li>
     
   </ul>
 
@@ -70,58 +74,430 @@
 </div>
 
 
-<!-- Footer -->
-<footer class="footer">
-    <div class="footer-container">
-      <div class="footer-section about">
-        <h3>About Us</h3>
-        <p>
-          Welcome to our Pet Care Portal. We provide resources and support for pet owners, veterinarians, and animal shelters.
-        </p>
-      </div>
-      <div class="footer-section links">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Pet Owner</a></li>
-          <li><a href="#">Veterinarians</a></li>
-          <li><a href="#">Animal Shelters</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="footer-section contact">
-        <h3>Contact Info</h3>
-        <p>Email: support@petcareportal.com</p>
-        <p>Phone: +1 234 567 890</p>
-        <p>Address: 123 Pet Street, Animal City</p>
-      </div>
-      <div class="footer-section social">
-        <h3>Follow Us</h3>
-        <div class="social-icons">
-          <a href="#" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+ <!-- home section  -->
+
+
+  <section class="home-section">
+    <div class="home-content">
+      <h1>Welcome <span> to </span><br> Veterinarian </h1>
+      <p>They Deserve Forever Love. A one-stop pet care platform to manage your pets, explore products, and connect with veterinarians & shelters.</p>
+      <button class="btn">View More</button>
+    </div>
+  </section>
+
+
+<!-- home section  end  -->
+
+
+
+  <div class="vet-container" id="veterinarian">
+    <h2>Our Veterinarians</h2>
+
+    <div class="vet-profile">
+      <img src="../image/femaledoctor.jpg" alt="Vet Photo">
+      <div class="vet-info">
+        <h3>Dr. Sarah Khan</h3>
+        <p>Specialization: Veterinary Dermatology</p>
+        <div class="contact">
+          <p><i class="fa-solid fa-phone"></i> +92 300 1234567</p>
+          <p><i class="fa-solid fa-envelope"></i> sarah.vet@example.com</p>
+          <p><i class="fa-solid fa-location-dot"></i> Karachi, Pakistan</p>
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2024 Pet Care Portal. All rights reserved.</p>
+
+    <div class="vet-profile">
+      <img src="../image/maledoctor.jpg" alt="Vet Photo">
+      <div class="vet-info">
+        <h3>Dr. Ahmed Ali</h3>
+        <p>Specialization: Veterinary Surgery</p>
+        <div class="contact">
+          <p><i class="fa-solid fa-phone"></i> +92 333 9876543</p>
+          <p><i class="fa-solid fa-envelope"></i> ahmed.surgeon@example.com</p>
+          <p><i class="fa-solid fa-location-dot"></i> Lahore, Pakistan</p>
+        </div>
+      </div>
     </div>
-  </footer>
+
+    <div class="vet-profile">
+      <img src="../image/femaledoctor2.jpg" alt="Vet Photo">
+      <div class="vet-info">
+        <h3>Dr. Mehwish Raza</h3>
+        <p>Specialization: Veterinary Dentistry</p>
+        <div class="contact">
+          <p><i class="fa-solid fa-phone"></i> +92 321 6547890</p>
+          <p><i class="fa-solid fa-envelope"></i> mehwish.dentist@example.com</p>
+          <p><i class="fa-solid fa-location-dot"></i> Islamabad, Pakistan</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  
+
+  <div class="appointment-wrapper" id="appointment">
+    <h2 class="appointment-heading">Appointment</h2>
+
+    <div class="appointment-container">
+      <!-- Left Side Static Data -->
+      <div class="appointment-left">
+        <h3>Book Appointment</h3>
+        <p>✔️ Choose your preferred timing</p>
+        <p>✔️ Consult with certified veterinarians</p>
+        <p>✔️ Get instant confirmation</p>
+
+        <h3>Available Timings</h3>
+        <p>09:00 AM – 11:00 AM</p>
+        <p>01:00 PM – 03:00 PM</p>
+        <p>05:00 PM – 07:00 PM</p>
+
+        <h3>Contact Info</h3>
+        <p>📞 +92 300 1234567</p>
+        <p>📧 vetcare@example.com</p>
+      </div>
+
+      <!-- Right Side Form -->
+      <div class="appointment-right">
+        <h3>Fill Your Details</h3>
+        <form class="appointment-form">
+          <input type="text" placeholder="Enter your name" required>
+          <input type="email" placeholder="Enter your email" required>
+          <input type="password" placeholder="Enter your password" required>
+          <button type="submit">Book Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+
+
+<div class="case-body">
+
+  <div class="case-container" id="vetercasestudies">
+    <h2 class="case-heading">Veterinarian Case Studies</h2>
+
+    <div class="case-grid">
+
+      <!-- Case 1 -->
+      <div class="case-card">
+        <div class="case-header">
+          <i class="fa-solid fa-dog case-icon"></i>
+          <h3 class="case-title">Max (Golden Retriever)</h3>
+        </div>
+        <div class="case-content">
+          <p><strong>Condition:</strong> Skin Allergy</p>
+          <p><strong>Diagnosis:</strong> Red patches and excessive scratching.</p>
+          <p><strong>Treatment:</strong> Anti-allergy meds + medicated shampoo.</p>
+          <p class="outcome success"><strong>Outcome:</strong> Fully recovered.</p>
+        </div>
+      </div>
+
+      <!-- Case 2 -->
+      <div class="case-card">
+        <div class="case-header">
+          <i class="fa-solid fa-cat case-icon"></i>
+          <h3 class="case-title">Bella (Persian Cat)</h3>
+        </div>
+        <div class="case-content">
+          <p><strong>Condition:</strong> Dental Issues</p>
+          <p><strong>Diagnosis:</strong> Inflamed gums, difficulty eating.</p>
+          <p><strong>Treatment:</strong> Dental cleaning + antibiotics.</p>
+          <p class="outcome success"><strong>Outcome:</strong> Improved appetite.</p>
+        </div>
+      </div>
+
+      <!-- Case 3 -->
+      <div class="case-card">
+        <div class="case-header">
+          <i class="fa-solid fa-paw case-icon"></i>
+          <h3 class="case-title">Rocky (Bulldog)</h3>
+        </div>
+        <div class="case-content">
+          <p><strong>Condition:</strong> Obesity</p>
+          <p><strong>Diagnosis:</strong> Overweight, breathing issues.</p>
+          <p><strong>Treatment:</strong> Diet plan + exercise routine.</p>
+          <p class="outcome ongoing"><strong>Outcome:</strong> 3kg loss, ongoing.</p>
+        </div>
+      </div>
+
+      <!-- Case 4 -->
+      <div class="case-card">
+        <div class="case-header">
+          <i class="fa-solid fa-dove case-icon"></i>
+          <h3 class="case-title">Milo (Parrot)</h3>
+        </div>
+        <div class="case-content">
+          <p><strong>Condition:</strong> Feather Plucking</p>
+          <p><strong>Diagnosis:</strong> Stress and poor diet.</p>
+          <p><strong>Treatment:</strong> Improved diet + enrichment toys.</p>
+          <p class="outcome ongoing"><strong>Outcome:</strong> Better feather growth.</p>
+        </div>
+      </div>
+
+      <!-- Case 5 -->
+      <div class="case-card">
+        <div class="case-header">
+          <i class="fa-solid fa-dog case-icon"></i>
+          <h3 class="case-title">Shadow (German Shepherd)</h3>
+        </div>
+        <div class="case-content">
+          <p><strong>Condition:</strong> Hip Dysplasia</p>
+          <p><strong>Diagnosis:</strong> Limping, difficulty walking.</p>
+          <p><strong>Treatment:</strong> Pain relief meds + physiotherapy.</p>
+          <p class="outcome ongoing"><strong>Outcome:</strong> Improved mobility.</p>
+        </div>
+      </div>
+
+      <!-- Case 6 -->
+      <div class="case-card">
+        <div class="case-header">
+          <i class="fa-solid fa-fish case-icon"></i>
+          <h3 class="case-title">Nemo (Goldfish)</h3>
+        </div>
+        <div class="case-content">
+          <p><strong>Condition:</strong> Fin Rot</p>
+          <p><strong>Diagnosis:</strong> Fins damaged and pale.</p>
+          <p><strong>Treatment:</strong> Water treatment + antibiotics.</p>
+          <p class="outcome success"><strong>Outcome:</strong> Healthy fins restored.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+
+
+  
+  <!-- about us  -->
+
+   <section class="aboutus-section" id="about">
+    <h1 class="aboutus-title">About Us</h1>
+    <p class="aboutus-intro">
+      Welcome to <strong>FurEver Care</strong> – a dedicated platform for Pet Owners. 
+      Our mission is to make pet care easier, smarter, and more fun. 
+      Here you will find guidance on feeding, grooming, training, and health care tips, 
+      along with product recommendations and emergency support.  
+    </p>
+
+    <h2 style="text-align:center; margin-bottom:20px;">Our Team</h2>
+    <div class="aboutus-team">
+      <div class="aboutus-member">
+        <img src="../image/1 dog.jpg" alt="Ali">
+        <h3>Ali</h3>
+        <p>Frontend Developer</p>
+      </div>
+      <div class="aboutus-member">
+        <img src="../image/2 dog.jpg" alt="Sana">
+        <h3>Sana</h3>
+        <p>UI/UX Designer</p>
+      </div>
+      <div class="aboutus-member">
+        <img src="../image/3 dog.jpg" alt="Ahmed">
+        <h3>Ahmed</h3>
+        <p>Content Specialist</p>
+      </div>
+      <div class="aboutus-member">
+        <img src="../image/4 dog.jpg" alt="Hira">
+        <h3>Hira</h3>
+        <p>Project Manager</p>
+      </div>
+    </div>
+  </section>
+
+<!-- Why Choose Us Section -->
+<section class="whychoose-section">
+  <div class="whychoose-container">
+    <h3 class="whychoose-subtitle">Why Choose Us?</h3>
+    <h2 class="whychoose-title">Best Service to Breeds Your Loved Dog Explore</h2>
+
+    <div class="whychoose-cards">
+      <div class="whychoose-card">
+        <h3>75%</h3>
+        <p>DOGS ARE FIRST BRED</p>
+      </div>
+      <div class="whychoose-card">
+        <h3>259+</h3>
+        <p>MOST DOGS ARE FIRST</p>
+      </div>
+      <div class="whychoose-card">
+        <h3>39K</h3>
+        <p>DOG BREEDING</p>
+      </div>
+      <div class="whychoose-card">
+        <h3>45+</h3>
+        <p>YEARS OF HISTORY</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- 📞 Contact Section -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p class="intro">Have any questions or need help? Get in touch with us.</p>
+
+  <!-- Contact Info Cards -->
+  <div class="contact-cards">
+    <div class="card">
+      <i class="fas fa-phone-alt"></i>
+      <h4>Phone</h4>
+      <p>+92-321-1112223</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-envelope"></i>
+      <h4>Email</h4>
+      <p>support@furever.com</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-map-marker-alt"></i>
+      <h4>Location</h4>
+      <p>DHA Phase 5, Karachi</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-clock"></i>
+      <h4>Working Hours</h4>
+      <p>Mon–Sat: 9AM–8PM</p>
+    </div>
+  </div>
+
+  <!-- Contact Layout: Map + Form -->
+  <div class="contact-layout">
+    <!-- Left: Map -->
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.882474138943!2d67.05793967470234!3d24.80296297795506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33dcda1c1f0df%3A0x8b2d8ef6e8f8c2a!2sDHA%20Phase%205%20Karachi!5e0!3m2!1sen!2s!4v1694512345678!5m2!1sen!2s" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <!-- Right: Form -->
+    <div class="contact-form">
+      <h3>Get in Touch</h3>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+  <footer class="fc-footer">
+   
+     <div class="fc-footer-left">
+      <h1>FurEver Care</h1>
+      <p>FurEver Care brings trusted pet adoption, breeder support, and complete care services to ensure every pet finds a happy home with love.</p>
+      <div class="fc-call">
+        <i class="fas fa-headphones"></i> 747-800-9880 
+        <span>CALL NOW</span>
+      </div>
+      <div class="fc-social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div> 
+
+    
+     <div class="fc-footer-col">
+      <h3>Our Policies</h3>
+      <ul>
+        <li><a href="#">Adoption Policy</a></li>
+        <li><a href="#">Breeder Transparency Policy</a></li>
+        <li><a href="#">Health & Safety Policy</a></li>
+        <li><a href="#">Return & Refund Policy</a></li>
+        <li><a href="#">Privacy & Data Protection</a></li>
+        <li><a href="#">Grievance Redressal</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div> 
+
+    
+     <div class="fc-footer-col">
+      <h3>Our Services</h3>
+      <ul>
+        <li><a href="#">Pet Adoption Support</a></li>
+        <li><a href="#">Verified Breeder Network</a></li>
+        <li><a href="#">Pet Grooming & Care</a></li>
+        <li><a href="#">Veterinary Consultation</a></li>
+        <li><a href="#">Training & Behaviour Support</a></li>
+        <li><a href="#">Pet Nutrition Guidance</a></li>
+        <li><a href="#">24/7 Customer Assistance</a></li>
+      </ul>
+    </div> 
+
+    
+     <div class="fc-footer-col">
+      <h3>Instagram</h3>
+      <div class="fc-instagram">
+        <img src="../image/insta_img01.png" alt="">
+        <img src="../image/insta_img02.png" alt="">
+        <img src="../image/insta_img03.png" alt="">
+        <img src="../image/insta_img04.png" alt="">
+        <img src="../image/insta_img05.png" alt="">
+        <img src="../image/insta_img06.png" alt="">
+      </div>
+    </div>
+  </footer> 
+
+  
+  <div class="fc-footer-bottom">
+    © 2025 FurEver Care. All Rights Reserved.
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="pageOverlay"></div>
 
 <script src="js/veter.js"></script>
 
 
 
-<script>document.addEventListener("DOMContentLoaded", () => {
+<script>
+document.addEventListener("DOMContentLoaded", () => {
   const userName = localStorage.getItem("fcUserName");
   if(userName){
     const displayEl = document.getElementById("userDisplay");
     if(displayEl){
-      displayEl.textContent = "👤 " + userName;
+      displayEl.innerHTML = '<i class="fa fa-user"></i> ' + userName;
     }
   }
-});</script>
+});
+</script>
 </body>
 </html>

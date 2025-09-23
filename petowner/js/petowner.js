@@ -8,31 +8,21 @@
 
   // ✅ Search keywords + synonyms
   const searchMap = {
-    "home": "#home",
-    "pet profile": "#owner-profile",
-    "dog profile": "#owner-profile",
-    "cat profile": "#owner-profile",
-    "feeding guide": "#owner-feeding",
-    "grooming": "#owner-grooming",
-    "health tips": "#owner-health",
-    "medicine": "#owner-health",
-    "training": "#owner-training",
-    "products": "#owner-products",
-    "emergency": "#owner-emergency",
-    "feedback": "#owner-feedback",
-    "contact": "#owner-contact",
-    "about": "#owner-about",
-    "vet": "#vet-profile",
-    "doctor": "#vet-profile",
-    "veterinarian": "#vet-profile",
-    "slots": "#vet-slots",
-    "case studies": "#vet-cases",
-    "adopt": "#shelter-adopt",
-    "adopt dog": "#shelter-adopt",
-    "adopt cat": "#shelter-adopt",
-    "stories": "#shelter-stories",
-    "events": "#shelter-events",
-    "shelter contact": "#shelter-contact"
+    "home": "petowner.html",
+    "about": "#about",
+    "pet profile": "#petprofile",
+    "feeding profile": "#feeding",
+    "grooming profile": "#grooming",
+    "Health guide": "#pet-health",
+    "training tips": "#training-tips",
+    "dog/cat food": "#products",
+    "toys": "#products",
+    "grooming essentials": "#products",
+    "beeding and apparel": "#products",
+    "health supplements": "#products",
+    "emergency": "#emergency",
+    "feedback": "#feedback",
+    "contact us": "#contact"
   };
 
   // Open overlay
@@ -216,26 +206,38 @@ menu.querySelectorAll('a').forEach(link => {
     });
   });
 
+   
 
 
+  // 🎥 Video hover control
+document.querySelectorAll(".ph-video").forEach(card => {
+  let video = card.querySelector("video");
 
+  card.addEventListener("mouseenter", () => {
+    video.play();
+  });
 
+  card.addEventListener("mouseleave", () => {
+    video.pause();
+    video.currentTime = 0;
+  });
+});
 
+// 🎵 Audio hover control (sirf Oral Care ke liye)
+const oralCard = document.querySelector(".oral-card");
+const oralAudio = document.getElementById("oralAudio");
 
+oralCard.addEventListener("mouseenter", () => {
+  oralAudio.play().catch(err => {
+    console.log("Browser blocked autoplay:", err);
+  });
+});
 
+oralCard.addEventListener("mouseleave", () => {
+  oralAudio.pause();
+  oralAudio.currentTime = 0;
+});
 
-
-
-
-
-
-
-
-
-
-
-
-  
 
 
 
@@ -274,7 +276,6 @@ window.addEventListener('load', () => {
     }
   });
 });
-
 
 
 

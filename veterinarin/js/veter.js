@@ -169,3 +169,110 @@ menu.querySelectorAll('a').forEach(link => {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+window.addEventListener('load', () => {
+  const overlay = document.getElementById('pageOverlay');
+
+  // fade out overlay
+  overlay.style.opacity = 0;
+
+  // remove overlay after transition
+  setTimeout(() => {
+    overlay.style.display = 'none';
+  }, 1000); // 1s matches CSS transition
+});
+
+
+
+
+
+// Animations   
+
+// Overlay fade-out + home page animation
+window.addEventListener('load', () => {
+  const overlay = document.getElementById('pageOverlay');
+  overlay.style.opacity = 0;
+
+  setTimeout(() => overlay.style.display = 'none', 1000);
+
+  // Animate elements already in viewport (home page)
+  const animElems = document.querySelectorAll('.animate');
+  animElems.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if(rect.top < window.innerHeight) { // visible on load
+      el.classList.add('active');
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  Loader 
+
+
+const overlay = document.getElementById('loadingOverlay');
+
+// Page reload hone par dikhana
+window.addEventListener('beforeunload', () => {
+  overlay.classList.add('show');
+});
+
+// Page load hone par chhupana
+window.addEventListener('load', () => {
+  overlay.classList.remove('show');
+});
+
+// Agar internet chala jaye
+window.addEventListener('offline', () => {
+  overlay.querySelector('p').textContent = "No Internet Connection...";
+  overlay.classList.add('show');
+});
+
+// Dubara internet aa jaye
+window.addEventListener('online', () => {
+  overlay.querySelector('p').textContent = "Loading...";
+  setTimeout(() => overlay.classList.remove('show'), 500);
+});

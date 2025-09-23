@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="css/petowner.css">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+
+    <!-- Loader Overlay -->
+<div id="loadingOverlay" class="loading-overlay">
+  <img src="../image/preloader.gif" alt="Loading..." class="loader-gif">
+  <p style="font-family: 'Open Sans', sans-serif;">Loading...</p>
+</div>
+    
+
+<div class="header">
+    <!-- Top Info Bar -->
+<div class="top-bar">
+  <div class="scroll-text">
+    Call us: <strong>747-800-9880</strong> &nbsp; | &nbsp; 
+    Opening Hours: <strong>7:00 am - 9:00 pm (Mon - Sun)</strong>
+  </div>
+  <div class="social">
+    Follow: 
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-linkedin"></i>
+  </div>
+</div>
+
+<!-- Navbar -->
+<div class="navbar">
+
+
+  <!-- 👇 Ye naya add karna hai -->
+  <div class="toggler" id="navToggler">
+    <i class="fa fa-bars"></i>
+  </div>
+  <!-- Left: Brand -->
+  <div class="brand"><a href="../index.html" style="color: #333; text-decoration: none;">FurEver Care.</a></div>
+
+  <!-- Center: Menu -->
+  <ul class="menu">
+    <li><a href="#about">About</a></li>
+    <li>
+      <a href="#grooming">Pet Care Sections ▾</a>
+      <ul class="dropdown">
+        <li><a href="#petprofile">Pet Profile</a></li>
+        <li><a href="#feeding">Feeding Guide</a></li>
+        <li><a href="#grooming">Grooming Videos</a></li>
+        <li><a href="#pet-health">Health Tips</a></li>
+        <li><a href="#training-tips">Training Tips</a></li>
+      
+      </ul>
+    </li>
+    <li>
+      <a href="#products">Pet Products Showcase ▾</a>
+      <ul class="dropdown">
+         <li><a href="#products">Dog/Cat Food</a></li>
+        <li><a href="#products">Toys</a></li>
+        <li><a href="#products">Grooming Essentials</a></li>
+        <li><a href="#products">Bedding and Apparel</a></li>
+        <li><a href="#products">Health Supplements</a></li>
+      
+      </ul>
+    </li>
+    <li><a href="#emergency">Emergency</a></li>
+    
+   
+    <li><a href="#feedback">Feedback</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+    
+  </ul>
+
+<!-- Right Section -->
+<div class="right">
+  <i class="fa fa-search" id="searchIcon"></i>&nbsp; | &nbsp; 
+  <span class="username" id="userDisplay">
+    <i class="fa fa-user"></i>  Guest
+  </span>
+</div>
+
+<!-- 🔍 Search Overlay -->
+<div id="searchOverlay">
+  <span class="close-btn" id="closeSearch">&times;</span>
+  <div class="search-content">
+  <input type="text" id="searchInput" placeholder="Type to search..." />
+  <button id="searchBtn">Search</button>
+  <ul id="suggestions"></ul>  
+</div>
+</div>
+
+
+
+</div>
+</div>
+ <!-- navbar end  -->
+
+
+ <!-- home section  -->
+
+
+  <section class="home-section">
+    <div class="home-content">
+      <h1>Welcome to <br> Pet Owner Section</h1>
+      <p>They Deserve Forever Love. A one-stop pet care platform to manage your pets, explore products, and connect with veterinarians & shelters.</p>
+      <button class="btn">View More</button>
+    </div>
+  </section>
+
+
+<!-- home section  end  -->
+
+
+
+
+   <section class="pet-profile-section" id="petprofile">
+    <!-- Left Image -->
+    <div class="pet-profile-image">
+      <img src="../image/American_Pitbull.webp" alt="Pet Image">
+    </div>
+
+    <!-- Right Content -->
+    <div class="pet-profile-content">
+      <h2>Welcome to Pets Care</h2>
+      <p class="pet-profile-subheading">Your pet’s health and well-being are our top priority.</p>
+      <p class="pet-profile-desc">
+        Quisque ut dolor gravida, placerat libero vel, euismod. Ut enim ad minim veniam, quis nostrud exercitation. 
+        Quam temere in vitiis, legem sancimus haerentia. Pellentesque habitant morbi tristique senectus et netus.
+      </p>
+
+      <!-- Services -->
+      <div class="pet-profile-services">
+
+        <div class="pet-profile-service-box">
+          <span class="pet-profile-icon"><i class="fa-solid fa-scissors"></i></span>
+          <div>
+            <h4>Pet Grooming</h4>
+            <p>Dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+            <a href="#" class="pet-profile-btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="pet-profile-service-box">
+          <span class="pet-profile-icon"><i class="fa-solid fa-hotel"></i></span>
+          <div>
+            <h4>Pet Hotel</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+            <a href="#" class="pet-profile-btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="pet-profile-service-box">
+          <span class="pet-profile-icon"><i class="fa-solid fa-syringe"></i></span>
+          <div>
+            <h4>Vaccination</h4>
+            <p>Consectetur adipiscing elit, ut labore et dolore magna aliqua sed do eiusmod.</p>
+            <a href="#" class="pet-profile-btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="pet-profile-service-box">
+          <span class="pet-profile-icon"><i class="fa-solid fa-kit-medical"></i></span>
+          <div>
+            <h4>Pet Care</h4>
+            <p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+            <a href="#" class="pet-profile-btn">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- pet profile section -->
+
+ <section class="profile-section" id="profile">
+    <h2  class="pet_s_head"> Pet Profile Section</h2>
+
+    <div class="profile-container">
+      <div class="pet-card">
+        <img src="../image/petprofilesectionimage.webp" alt="Tommy">
+        <h3>Tommy</h3>
+        <p><strong>Species:</strong> Dog</p>
+        <p><strong>Breed:</strong> Golden Retriever</p>
+        <p><strong>Age:</strong> 3 Years</p>
+        <p><strong>Vaccinations:</strong> Rabies, Distemper, Parvovirus</p>
+      </div>
+
+      <div class="pet-card">
+        <img src="../image/kittyimage.jpeg" alt="Kitty">
+        <h3>Kitty</h3>
+        <p><strong>Species:</strong> Cat</p>
+        <p><strong>Breed:</strong> Persian</p>
+        <p><strong>Age:</strong> 2 Years</p>
+        <p><strong>Vaccinations:</strong> Rabies, Feline Distemper</p>
+      </div>
+
+      <div class="pet-card">
+        <img src="../image/brunoimage.webp" alt="Bruno">
+        <h3>Bruno</h3>
+        <p><strong>Species:</strong> Dog</p>
+        <p><strong>Breed:</strong> Beagle</p>
+        <p><strong>Age:</strong> 1.5 Years</p>
+        <p><strong>Vaccinations:</strong> Parvovirus, Hepatitis</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  
+
+  <!-- Feeding Guide Section -->
+<section class="feeding-guide-section" id="feeding">
+  <div class="feeding-container">
+    <h2 class="feeding-title">Pet Feeding Guide</h2>
+    <p class="feeding-subtitle" style="margin-top: 30px;">Comprehensive nutrition guidance for every life stage</p>
+
+    <!-- Tabs -->
+    <div class="feeding-tabs">
+      <button class="tab-btn active" data-tab="puppy">Puppies</button>
+      <button class="tab-btn" data-tab="adult-dog">Adult Dogs</button>
+      <button class="tab-btn" data-tab="cats">Cats</button>
+    </div>
+
+    <!-- Content Wrapper -->
+    <div class="feeding-wrapper">
+
+      <!-- Puppies -->
+      <div class="feeding-content active" id="puppy">
+        <div class="feeding-row">
+          <div class="feeding-img">
+            <img src="../image/petprofilesection.jpg" alt="Puppy Feeding">
+          </div>
+          <div class="feeding-text">
+            <h3>Puppies</h3>
+            <p>Puppies grow very quickly and need nutrient-dense food for bones, muscles, and brain development. Frequent small meals prevent low blood sugar and help them stay energetic.</p>
+            <ul>
+              <li><strong>8–12 weeks:</strong> 4 meals/day, soft or soaked puppy kibble.</li>
+              <li><strong>3–6 months:</strong> 3 meals/day, introduce balanced dry + wet food.</li>
+              <li><strong>6–12 months:</strong> 2–3 meals/day, portion by breed and weight.</li>
+            </ul>
+            <p>Best practice: Choose food labeled as “puppy formula” with added DHA for brain health.</p>
+            <p class="tip">Tip: Avoid cow’s milk — it can upset puppy stomachs. Stick to water and vet-approved milk replacers if needed.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Adult Dogs -->
+      <div class="feeding-content" id="adult-dog">
+        <div class="feeding-row">
+          <div class="feeding-img">
+            <img src="../image/petprofilesectionimage.webp" alt="Adult Dog Feeding">
+          </div>
+          <div class="feeding-text">
+            <h3>Adult Dogs</h3>
+            <p>Adult dogs require a stable, portion-controlled diet to maintain muscle tone and energy. Their needs vary by breed size, metabolism, and activity levels.</p>
+            <ul>
+              <li><strong>Small breeds:</strong> 2 meals/day (1–1.5 cups total).</li>
+              <li><strong>Medium breeds:</strong> 2 meals/day (2–2.5 cups total).</li>
+              <li><strong>Large breeds:</strong> 2 meals/day (3–4 cups total, divided).</li>
+            </ul>
+            <p>Always measure food with a cup instead of guessing. Switch to a senior diet after 7 years to support joints and digestion.</p>
+            <p class="tip">Tip: Mix dry kibble with small amounts of wet food for taste variety, but avoid table scraps — they cause obesity.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cats -->
+      <div class="feeding-content" id="cats">
+        <div class="feeding-row">
+          <div class="feeding-img">
+            <img src="../image/cats.jpg" alt="Cat Feeding">
+          </div>
+          <div class="feeding-text">
+            <h3>Cats</h3>
+            <p>Cats are obligate carnivores — they thrive on high-protein meals and low carbs. Indoor cats especially need portion control to avoid obesity.</p>
+            <ul>
+              <li><strong>Kittens:</strong> 3–4 meals/day with kitten-specific wet food.</li>
+              <li><strong>Adult cats:</strong> 2 meals/day (dry + wet mix, 1/2–3/4 cup daily).</li>
+              <li><strong>Seniors:</strong> 2–3 small meals/day, with added omega-3 for joints.</li>
+            </ul>
+            <p>Wet food helps hydration since cats naturally drink less water. Always keep fresh water bowls available at different spots in the home.</p>
+            <p class="tip">Tip: Avoid feeding cats dog food — it lacks taurine, which is essential for their heart and vision.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- Section Title -->
+  <h2 class="section-title" id="grooming">Grooming Video</h2>
+  <p class="section-intro">
+    Your dog's health is the key to a happy and long life. Explore essential tips below for grooming, diet, exercise, and overall wellness.
+  </p>
+
+  <!-- Grooming Tips -->
+  <section class="tips-container">
+    <div class="tip-card">
+      <i class="fas fa-bath"></i>
+      <h4>Regular Bathing</h4>
+      <p>Keep your dog clean with monthly baths using mild shampoo.</p>
+    </div>
+    <div class="tip-card">
+      <i class="fas fa-cut"></i>
+      <h4>Hair Trimming</h4>
+      <p>Trim long hair to avoid tangles and dirt build-up.</p>
+    </div>
+    <div class="tip-card">
+      <i class="fas fa-tooth"></i>
+      <h4>Dental Care</h4>
+      <p>Brush teeth weekly to prevent plaque and gum disease.</p>
+    </div>
+    <div class="tip-card">
+      <i class="fas fa-stethoscope"></i>
+      <h4>Health Check</h4>
+      <p>Regular vet checkups keep your dog safe from hidden issues.</p>
+    </div>
+  </section>
+
+<section class="ht-container">
+  <div class="ht-card">
+    <div class="ht-media">
+      <img class="ht-image" src="../image/petgrooming1.jpeg" alt="Dog 1" />
+      <video class="ht-video" autoplay muted loop controls>
+        <source src="../video/petgrommer.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="ht-content">
+      <h3>Regular Bath</h3>
+      <p>Daily bath for good and clean look</p>
+      <div class="ht-breed">
+        <h4>Breed Tip:</h4>
+        <p><strong>Labrador</strong> — High energy and loves to run.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ht-card">
+    <div class="ht-media">
+      <img class="ht-image" src="../image/petgrooming2.jpeg" alt="Dog 2" />
+      <video class="ht-video" autoplay muted loop controls>
+        <source src="../video/petgrommer2.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="ht-content">
+      <h3> Balanced Diet</h3>
+      <p>A proper diet supports digestion, weight, and immune system.</p>
+      <div class="ht-breed">
+        <h4>Breed Tip:</h4>
+        <p><strong>Beagle</strong> — Watch their diet to avoid weight gain.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ht-card">
+    <div class="ht-media">
+      <img class="ht-image" src="../image/petgrooming3.jpg" alt="Dog 3" />
+      <video class="ht-video" autoplay muted loop controls>
+        <source src="../video/petgrommer3.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="ht-content">
+      <h3> Vet Checkups</h3>
+      <p>Schedule regular vet visits for vaccines and early detection.</p>
+      <div class="ht-breed">
+        <h4>Breed Tip:</h4>
+        <p><strong>German Shepherd</strong> — Needs regular health monitoring.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="ap-title" id="products">Products</h2>
+
+  <div class="ap-buttons">
+    <button onclick="apFilterProducts('all')">All</button>
+    <button onclick="apFilterProducts('bleeding')">Bedding</button>
+    <button onclick="apFilterProducts('food')">Food</button>
+    <button onclick="apFilterProducts('grooming')">Grooming</button>
+    <button onclick="apFilterProducts('health')">Health</button>
+    <button onclick="apFilterProducts('products')">Toys</button>
+  </div>
+
+  <div class="ap-card-container" id="ap-card-container"></div>
+
+
+
+
+  <!-- about us  -->
+
+   <section class="aboutus-section" id="about">
+    <h1 class="aboutus-title">About Us</h1>
+    <p class="aboutus-intro">
+      Welcome to <strong>FurEver Care</strong> – a dedicated platform for Pet Owners. 
+      Our mission is to make pet care easier, smarter, and more fun. 
+      Here you will find guidance on feeding, grooming, training, and health care tips, 
+      along with product recommendations and emergency support.  
+    </p>
+
+    <h2 style="text-align:center; margin-bottom:20px;">Our Team</h2>
+    <div class="aboutus-team">
+      <div class="aboutus-member">
+        <img src="../image/1 dog.jpg" alt="Ali">
+        <h3>Ali</h3>
+        <p>Frontend Developer</p>
+      </div>
+      <div class="aboutus-member">
+        <img src="../image/2 dog.jpg" alt="Sana">
+        <h3>Sana</h3>
+        <p>UI/UX Designer</p>
+      </div>
+      <div class="aboutus-member">
+        <img src="../image/3 dog.jpg" alt="Ahmed">
+        <h3>Ahmed</h3>
+        <p>Content Specialist</p>
+      </div>
+      <div class="aboutus-member">
+        <img src="../image/4 dog.jpg" alt="Hira">
+        <h3>Hira</h3>
+        <p>Project Manager</p>
+      </div>
+    </div>
+  </section>
+
+<!-- Why Choose Us Section -->
+<section class="whychoose-section">
+  <div class="whychoose-container">
+    <h3 class="whychoose-subtitle">Why Choose Us?</h3>
+    <h2 class="whychoose-title">Best Service to Breeds Your Loved Dog Explore</h2>
+
+    <div class="whychoose-cards">
+      <div class="whychoose-card">
+        <h3>75%</h3>
+        <p>DOGS ARE FIRST BRED</p>
+      </div>
+      <div class="whychoose-card">
+        <h3>259+</h3>
+        <p>MOST DOGS ARE FIRST</p>
+      </div>
+      <div class="whychoose-card">
+        <h3>39K</h3>
+        <p>DOG BREEDING</p>
+      </div>
+      <div class="whychoose-card">
+        <h3>45+</h3>
+        <p>YEARS OF HISTORY</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+  
+<!-- 🔹 Health Tips Section -->
+<section id="pet-health">
+  <div class="ph-container">
+    <h2>Health Tips</h2>
+    <p class="ph-intro">
+      Keep your pet healthy with these quick tips and expert advice. 
+      Watch videos, listen to audio, and read simple guides.
+    </p>
+
+    <div class="ph-grid">
+      <!-- Oral Care Card -->
+      <div class="ph-card ph-video oral-card">
+        <div class="ph-content">
+          <i class="fa-solid fa-tooth ph-icon"></i>
+          <h3>Oral Care</h3>
+          <p>Learn how to keep your pet’s teeth clean and prevent gum problems.</p>
+          <i class="fa-solid fa-volume-high audio-icon"></i>
+        </div>
+        <video muted preload="auto">
+          <source src="../video/catmeow.mp4" type="video/mp4">
+        </video>
+        <!-- 🎵 Audio file -->
+        <audio id="oralAudio" preload="auto">
+          <source src="../video/cute-cat-meow-400946.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <!-- Weight Management Card -->
+      <div class="ph-card ph-video">
+        <div class="ph-content">
+          <i class="fa-solid fa-weight-scale ph-icon"></i>
+          <h3>Weight Management</h3>
+          <p>Maintain your pet’s ideal weight with a healthy diet and exercise.</p>
+        </div>
+        <video muted preload="auto">
+          <source src="../video/pethealth1.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Common Conditions Card -->
+      <div class="ph-card ph-video">
+        <div class="ph-content">
+          <i class="fa-solid fa-stethoscope ph-icon"></i>
+          <h3>Common Conditions</h3>
+          <p>Identify and manage common issues like fleas, ticks, and allergies.</p>
+        </div>
+        <video muted preload="auto">
+          <source src="../video/pethealth3.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- 🔹 Training Tips Section Start -->
+<section id="training-tips">
+  <div class="tt-container">
+    <h2>Training Tips</h2>
+    <p class="tt-intro">
+      Listen and read simple guides to train your pet effectively. 
+      Build strong habits with love and consistency.
+    </p>
+
+    <div class="tt-grid">
+      <!-- Card 1 -->
+      <div class="tt-card">
+        <i class="fa-solid fa-dog tt-icon"></i>
+        <h3>Basic Commands</h3>
+        <p>Teach your pet “Sit” and “Stay” with short, daily sessions.</p>
+        <audio controls>
+          <source src="../video/dog-bark-179915.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="tt-card">
+        <i class="fa-solid fa-award tt-icon"></i>
+        <h3>Positive Reinforcement</h3>
+        <p>Reward good behavior with treats or affection for faster learning.</p>
+        <audio controls>
+          <source src="../video/dog-bark-179915.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="tt-card">
+       <i class="fa-solid fa-bone tt-icon"></i>
+
+        <h3>Sniffing Training</h3>
+        <p>Take your pet outside regularly and praise them when they succeed.</p>
+        <audio controls>
+          <source src="../video/animated-dog-panting-287307.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 🔹 Training Tips Section End -->
+
+
+
+
+  <section id="emergency">
+    <h2>Emergency & Vet Help</h2>
+    <p class="intro">
+      In case of urgent pet health issues, please use the following emergency contacts.
+    </p>
+
+    <div class="emergency-table">
+      <div class="row">
+        <span class="service">24/7 Vet Helpline</span>
+        <span class="contact">+92-300-1234567</span>
+      </div>
+      <div class="row">
+        <span class="service">Pet Poison Control</span>
+        <span class="contact">+92-311-7654321</span>
+      </div>
+      <div class="row">
+        <span class="service">Animal Rescue</span>
+        <span class="contact">+92-322-9876543</span>
+      </div>
+    </div>
+
+    <div class="clinic-info">
+      <h3>Clinic Contact</h3>
+      <p>Email: care@furever.com</p>
+      <p>Phone: +92-321-1112223</p>
+      <p>Location: DHA Phase 5, Karachi</p>
+    </div>
+  </section>
+
+
+
+  
+<section class="feedback" id="feedback">
+  <div class="feedback-container">
+    <!-- Left: Image -->
+    <div class="feedback-image">
+      <img src="../image/feedback.jpg" alt="Feedback Illustration">
+    </div>
+
+    <!-- Right: Content -->
+    <div class="feedback-content">
+      <h2>Feedback</h2>
+      <p class="intro">Your opinion matters to us. Please share your thoughts and help us improve!</p>
+
+      <!-- Rating Stars -->
+      <div class="rating">
+        <span>Rate Us:</span>
+        <div class="stars">
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+      </div>
+
+      <!-- Feedback Form -->
+      <form class="feedback-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Feedback" required></textarea>
+        <button type="submit">Submit Feedback</button>
+      </form>
+      <p class="note" style="font-family: 'Open Sans', sans-serif; color: rgb(104, 104, 104);" > Your feedback helps us serve you better.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- 📞 Contact Section -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p class="intro">Have any questions or need help? Get in touch with us.</p>
+
+  <!-- Contact Info Cards -->
+  <div class="contact-cards">
+    <div class="card">
+      <i class="fas fa-phone-alt"></i>
+      <h4>Phone</h4>
+      <p>+92-321-1112223</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-envelope"></i>
+      <h4>Email</h4>
+      <p>support@furever.com</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-map-marker-alt"></i>
+      <h4>Location</h4>
+      <p>DHA Phase 5, Karachi</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-clock"></i>
+      <h4>Working Hours</h4>
+      <p>Mon–Sat: 9AM–8PM</p>
+    </div>
+  </div>
+
+  <!-- Contact Layout: Map + Form -->
+  <div class="contact-layout">
+    <!-- Left: Map -->
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.882474138943!2d67.05793967470234!3d24.80296297795506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33dcda1c1f0df%3A0x8b2d8ef6e8f8c2a!2sDHA%20Phase%205%20Karachi!5e0!3m2!1sen!2s!4v1694512345678!5m2!1sen!2s" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <!-- Right: Form -->
+    <div class="contact-form">
+      <h3>Get in Touch</h3>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="fc-footer">
+   
+     <div class="fc-footer-left">
+      <h1>FurEver Care</h1>
+      <p>FurEver Care brings trusted pet adoption, breeder support, and complete care services to ensure every pet finds a happy home with love.</p>
+      <div class="fc-call">
+        <i class="fas fa-headphones"></i> 747-800-9880 
+        <span>CALL NOW</span>
+      </div>
+      <div class="fc-social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div> 
+
+    
+     <div class="fc-footer-col">
+      <h3>Our Policies</h3>
+      <ul>
+        <li><a href="#">Adoption Policy</a></li>
+        <li><a href="#">Breeder Transparency Policy</a></li>
+        <li><a href="#">Health & Safety Policy</a></li>
+        <li><a href="#">Return & Refund Policy</a></li>
+        <li><a href="#">Privacy & Data Protection</a></li>
+        <li><a href="#">Grievance Redressal</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div> 
+
+    
+     <div class="fc-footer-col">
+      <h3>Our Services</h3>
+      <ul>
+        <li><a href="#">Pet Adoption Support</a></li>
+        <li><a href="#">Verified Breeder Network</a></li>
+        <li><a href="#">Pet Grooming & Care</a></li>
+        <li><a href="#">Veterinary Consultation</a></li>
+        <li><a href="#">Training & Behaviour Support</a></li>
+        <li><a href="#">Pet Nutrition Guidance</a></li>
+        <li><a href="#">24/7 Customer Assistance</a></li>
+      </ul>
+    </div> 
+
+    
+     <div class="fc-footer-col">
+      <h3>Instagram</h3>
+      <div class="fc-instagram">
+        <img src="../image/insta_img01.png" alt="">
+        <img src="../image/insta_img02.png" alt="">
+        <img src="../image/insta_img03.png" alt="">
+        <img src="../image/insta_img04.png" alt="">
+        <img src="../image/insta_img05.png" alt="">
+        <img src="../image/insta_img06.png" alt="">
+      </div>
+    </div>
+  </footer> 
+
+  
+  <div class="fc-footer-bottom">
+    © 2025 FurEver Care. All Rights Reserved.
+  </div>
+
+
+
+
+
+<div id="pageOverlay"></div>
+
+<script src="js/petowner.js"></script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const userName = localStorage.getItem("fcUserName");
+  if(userName){
+    const displayEl = document.getElementById("userDisplay");
+    if(displayEl){
+      displayEl.innerHTML = '<i class="fa fa-user"></i> ' + userName;
+    }
+  }
+});
+</script>
+
+
+<script>
+  // Fetch Product Cards start
+
+
+
+ let apAllData = {};
+
+    fetch("./json/products.json")
+      .then(res => res.json())
+      .then(data => {
+        apAllData = data;
+        apRenderProducts('all'); 
+      })
+      .catch(err => {
+        console.error("Error:", err);
+        document.getElementById("ap-card-container").innerHTML = "<p>Failed to load data</p>";
+      });
+
+    function apRenderProducts(category) {
+      const container = document.getElementById("ap-card-container");
+      container.innerHTML = "";
+
+      let categoriesToShow = [];
+
+      if (category === "all") {
+        categoriesToShow = Object.keys(apAllData);
+      } else {
+        categoriesToShow = [category];
+      }
+
+      categoriesToShow.forEach(cat => {
+        const catData = apAllData[cat];
+        if (!catData) return;
+
+        catData.products.forEach(product => {
+          container.innerHTML += `
+            <div class="ap-card">
+              <img src="${product.image}" alt="${product.alt}">
+              <div class="ap-card-content">
+                <h5>${product.category}</h5>
+                <p class="ap-name">${product.name}</p>
+                ${product.description ? `<p>${product.description}</p>` : ""}
+                <div class="ap-price-add">
+                  <p class="ap-price">${product.price}</p>
+                  <button class="ap-add-btn">${product.button_text}</button>
+                </div>
+              </div>
+            </div>
+          `;
+        });
+      });
+    }
+
+    function apFilterProducts(category) {
+      apRenderProducts(category);
+    }
+
+
+
+
+
+// Fetch Product cards end 
+</script>
+</body>
+</html>

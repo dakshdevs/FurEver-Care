@@ -1369,96 +1369,154 @@ color: brown
 
 
 
-/* Import FontAwesome for social icons */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+.fc-footer {
+      background: #fdfaf6;
+      width: 100%;
+      padding: 50px 20px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+      font-family: Arial, sans-serif;
+    }
 
-.footer {
-  background:  #e6e6e5;
-  color: #020202;
-  padding: 40px 20px 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+    
+    .fc-footer-left h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 26px;
+      color: #0f3d3e;
+    }
 
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 30px;
-  justify-content: space-between;
-}
+    .fc-footer-left {
+      flex: 1 1 250px;
+    }
 
-.footer-section {
-  flex: 1 1 220px;
-  min-width: 220px;
-}
+    .fc-footer-left p {
+      color: #444;
+      margin: 15px 0;
+      line-height: 1.6;
+    }
 
-.footer-section h3 {
-  color: #050505;
-  margin-bottom: 15px;
-  font-size: 1.3rem;
-  border-bottom: 2px solid #444;
-  padding-bottom: 8px;
-}
+    .fc-call {
+      font-size: 20px;
+      font-weight: bold;
+      color: #0f3d3e;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 15px 0;
+    }
 
-.footer-section p,
-.footer-section ul,
-.footer-section a {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #2e2e2e;
-  text-decoration: none;
-}
+    .fc-call span {
+      display: block;
+      font-size: 14px;
+      color: #000;
+      font-weight: bold;
+    }
 
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-}
+    .fc-social-icons a {
+      margin-right: 10px;
+      color: #444; 
+      font-size: 18px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
 
-.footer-section ul li {
-  margin-bottom: 10px;
-}
+    .fc-social-icons a:hover {
+      color: #000; 
+    }
 
-.footer-section ul li a:hover {
-  color: #262626;
-}
+    .fc-footer-col {
+      flex: 1 1 200px;
+    }
 
-.social-icons a {
-  display: inline-block;
-  margin-right: 15px;
-  font-size: 1.2rem;
-  color: #292929;
-  transition: color 0.3s ease;
-}
+    .fc-footer-col h3 {
+      margin-bottom: 15px;
+      font-size: 18px;
+      color: #0f3d3e;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 900;
+    }
 
-.social-icons a:hover {
-  color: #262626;
-}
+    .fc-footer-col ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
 
-.footer-bottom {
-  text-align: center;
-  margin-top: 30px;
-  border-top: 1px solid #333;
-  padding-top: 15px;
-  font-size: 0.9rem;
-  color: #292929;
-}
+    .fc-footer-col ul li {
+      margin-bottom: 10px;
+    }
 
-/* Tablet & Mobile Screens */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    gap: 25px;
-  }
-  .footer-section {
-    min-width: 100%;
-  }
-}
+    .fc-footer-col ul li a {
+      text-decoration: none;
+      color: #444; 
+      font-size: 14px;
+      transition: 0.3s;
+    }
 
+    .fc-footer-col ul li a:hover {
+      color: #000; 
+    }
 
+    .fc-instagram {
+      display: grid;
+      grid-template-columns: repeat(3, 80px);
+      gap: 10px;
+      justify-content: center;
+    }
 
+    .fc-instagram img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
 
+    .fc-footer-bottom {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      padding: 15px;
+      background: #fdfaf6;
+      border-top: 1px solid #ddd;
+      font-family: Arial, sans-serif;
+      width: 100%;
+    }
 
+     
+    @media (max-width: 992px) {
+      .fc-footer {
+        flex-direction: column;
+        align-items: flex-start; 
+        text-align: left;
+      }
+      .fc-footer-col, 
+      .fc-footer-left {
+        width: 100%;
+      }
+      
+      .fc-instagram {
+        justify-content: center;
+      }
+    } 
+
+     @media (max-width: 768px) {
+      .fc-footer {
+        flex-direction: column;
+        align-items: flex-start; 
+        text-align: left;
+      }
+      .fc-footer-col, 
+      .fc-footer-left {
+        width: 100%;
+      }
+      
+      .fc-instagram {
+        justify-content: center;
+      }
+    } 
 
 
 

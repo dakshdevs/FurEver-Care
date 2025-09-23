@@ -1,0 +1,283 @@
+{
+  "bleeding": {
+    "title": "Beebing",
+    "products": [
+      {
+        "image": "../image/feedingguide.webp",
+        "alt": "Dog 1",
+        "category": "Dog Food",
+        "name": "Lint Roller",
+        "price": "$28.00",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/b2.webp",
+        "alt": "Dog 2",
+        "category": "Bedding",
+        "name": "Cat Bed",
+        "price": "$28.00",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/b3.webp",
+        "alt": "Dog 3",
+        "category": "Toys",
+        "name": "Plush Toy",
+        "price": "$28.00",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/b4.webp",
+        "alt": "Dog 4",
+        "category": "Toys",
+        "name": "Fluffy Toy",
+        "price": "$28.00",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/b5.webp",
+        "alt": "Dog 5",
+        "category": "Toys",
+        "name": "Pet Bed Toy",
+        "price": "$28.00",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/b6.webp",
+        "alt": "Dog 6",
+        "category": "Toys",
+        "name": "Chew Toy",
+        "price": "$28.00",
+        "button_text": "Add+"
+      }
+    ]
+  },
+
+  "food": {
+    "title": "Dog/Cat Food",
+    "products": [
+      {
+        "image": "../image/f1.webp",
+        "alt": "Dog Food Chicken",
+        "category": "Dog Food",
+        "name": "Chicken Feast",
+        "price": "$28.00",
+        "description": "Real chicken for a healthy diet.",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/f2.webp",
+        "alt": "Pet Food 1",
+        "category": "Dog Food",
+        "name": "Healthy Treats",
+        "price": "$28.00",
+        "description": "Nutritious treats for happy pets.",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/f3.webp",
+        "alt": "Pet Food 2",
+        "category": "Dog Food",
+        "name": "Energy Boost",
+        "price": "$28.00",
+        "description": "Fuel for active dogs and cats.",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/f4.webp",
+        "alt": "Pet Food 2",
+        "category": "Dog Food",
+        "name": "Active Nutrition",
+        "price": "$28.00",
+        "description": "Vitamins and minerals for pets.",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/f5.webp",
+        "alt": "Pet Food 2",
+        "category": "Dog Food",
+        "name": "Pet Delights",
+        "price": "$28.00",
+        "description": "Tasty and healthy for your pets.",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/f6.jpg",
+        "alt": "Pet Food 2",
+        "category": "Dog Food",
+        "name": "Vitality Food",
+        "price": "$28.00",
+        "description": "Protein-rich for overall health.",
+        "button_text": "Add+"
+      }
+    ]
+  },
+
+  "grooming": {
+    "title": "Grooming Essentials",
+    "products": [
+      {
+        "image": "../image/g1.webp",
+        "alt": "Lint Roller for Pets",
+        "category": "Grooming Tools",
+        "name": "Pet Lint Roller",
+        "price": "$12.00",
+        "description": "Remove pet hair and lint from your pet's fur and your furniture with this easy-to-use lint roller.",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/g2.webp",
+        "alt": "Bath Glove for Pets",
+        "category": "Grooming Tools",
+        "name": "Pets Bath Glove",
+        "price": "$18.00",
+        "description": "A soft, flexible glove designed to gently massage your pet while bathing. Perfect for cleaning and grooming.",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/g3.webp",
+        "alt": "Steamer Brush for Grooming",
+        "category": "Grooming Tools",
+        "name": "Steamer Grooming Brush",
+        "price": "$45.00",
+        "description": "A grooming brush that uses steam to help detangle and clean your pet’s fur while giving a soothing massage.",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/g4.jpg",
+        "alt": "Fur Detangler Comb",
+        "category": "Grooming Tools",
+        "name": "Fur Detangler Comb",
+        "price": "$22.00",
+        "description": "A specialized comb designed to detangle thick fur without causing discomfort to your pet.",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/g5.jpeg",
+        "alt": "Pet Nail Clipper",
+        "category": "Grooming Tools",
+        "name": "Pet Nail Clipper",
+        "price": "$15.00",
+        "description": "Trimming your pet's nails is now easier with this sharp, safe, and easy-to-use pet nail clipper.",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/g6.jpg",
+        "alt": "Pet Shampoo Brush",
+        "category": "Grooming Tools",
+        "name": "Pet Shampoo Brush",
+        "price": "$20.00",
+        "description": "Massage and apply shampoo to your pet’s coat with this easy-to-hold shampoo brush, ensuring an even and effective wash.",
+        "button_text": "Add+"
+      }
+    ]
+  },
+
+  "health": {
+    "title": "Pets Toys",
+    "products": [
+      {
+        "image": "../image/h1.webp",
+        "alt": "Dog 1",
+        "category": "Dog Food",
+        "name": "Lint Roller",
+        "price": "$28.00",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/h2.webp",
+        "alt": "Dog 2",
+        "category": "Bedding",
+        "name": "Cat Bed",
+        "price": "$28.00",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/h3.avif",
+        "alt": "Dog 3",
+        "category": "Toys",
+        "name": "Plush Toy",
+        "price": "$28.00",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/h4.jpg",
+        "alt": "Dog 4",
+        "category": "Toys",
+        "name": "Fluffy Toy",
+        "price": "$28.00",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/h5.webp",
+        "alt": "Dog 5",
+        "category": "Toys",
+        "name": "Pet Bed Toy",
+        "price": "$28.00",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/h661YAzqWqrKS._UF894,1000_QL80_.jpg",
+        "alt": "Dog 6",
+        "category": "Toys",
+        "name": "Chew Toy",
+        "price": "$28.00",
+        "button_text": "Add+"
+      }
+    ]
+  },
+
+  "products": {
+    "title": "Pets Toy's",
+    "products": [
+      {
+        "image": "../image/s1.jpg",
+        "alt": "Dog 1",
+        "category": "Dog toy’s",
+        "name": "Pet Knit Knacks",
+        "price": "$28.00",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/s2.jpg",
+        "alt": "Dog 2",
+        "category": "Dog toy’s",
+        "name": "Squeaky Dog",
+        "price": "$28.00",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/s3.jpg",
+        "alt": "Dog 3",
+        "category": "Dog toy’s",
+        "name": "Pet Knit Knacks",
+        "price": "$28.00",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/t4.jpg",
+        "alt": "Dog 3",
+        "category": "Dog toy’s",
+        "name": "Yoda Carriage",
+        "price": "$28.00",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/t5.jpg",
+        "alt": "Dog 3",
+        "category": "Dog toy’s",
+        "name": "Pet Knit Knacks",
+        "price": "$28.00",
+        "button_text": "Add+"
+      },
+      {
+        "image": "../image/t6.jpg",
+        "alt": "Dog 3",
+        "category": "Dog toy’s",
+        "name": "Yoda Carriage",
+        "price": "$28.00",
+        "button_text": "Add+"
+      }
+    ]
+  }
+}

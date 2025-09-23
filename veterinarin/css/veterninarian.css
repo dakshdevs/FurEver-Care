@@ -7,7 +7,11 @@
 
 html{
   scroll-behavior: smooth;
+  
+  scroll-padding-top: 90px; 
+
 }
+
 
 
 .header{
@@ -56,6 +60,20 @@ html{
   color: #333;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
+}
+.username {
+  font-weight: 600;       
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;  
+  display: flex;
+  align-items: center;
+  gap: 10px;               
+  font-size: 15px;
+}
+.username i {
+  font-size: 16px;
+  color: #333;
+
 }
 .navbar .menu {
   display: flex;
@@ -240,81 +258,10 @@ html{
 
 
 
-/* Import FontAwesome for social icons */
-    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
-  
-    .footer {
-      background-color: #121212;
-      color: #ccc;
-      padding: 40px 20px 20px;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-  
-    .footer-container {
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 1200px;
-      margin: 0 auto;
-      gap: 30px;
-      justify-content: space-between;
-    }
-  
-    .footer-section {
-      flex: 1 1 220px;
-      min-width: 220px;
-    }
-  
-    .footer-section h3 {
-      color: #fff;
-      margin-bottom: 15px;
-      font-size: 1.3rem;
-      border-bottom: 2px solid #444;
-      padding-bottom: 8px;
-    }
-  
-    .footer-section p,
-    .footer-section ul,
-    .footer-section a {
-      font-size: 0.95rem;
-      line-height: 1.6;
-      color: #ccc;
-      text-decoration: none;
-    }
-  
-    .footer-section ul {
-      list-style: none;
-      padding: 0;
-    }
-  
-    .footer-section ul li {
-      margin-bottom: 10px;
-    }
-  
-    .footer-section ul li a:hover {
-      color: #1e90ff;
-    }
-  
-    .social-icons a {
-      display: inline-block;
-      margin-right: 15px;
-      font-size: 1.2rem;
-      color: #ccc;
-      transition: color 0.3s ease;
-    }
-  
-    .social-icons a:hover {
-      color: #1e90ff;
-    }
-  
-    .footer-bottom {
-      text-align: center;
-      margin-top: 30px;
-      border-top: 1px solid #333;
-      padding-top: 15px;
-      font-size: 0.9rem;
-      color: #666;
-    }
-  
+
+
+
+
     
 
 /* Note */
@@ -329,13 +276,13 @@ html{
 
 /* Tablet & Mobile Screens */
 @media (max-width: 768px) {
-           .footer-container {
+           /* .footer-container {
         flex-direction: column;
         gap: 25px;
       }
       .footer-section {
         min-width: 100%;
-      }
+      } */
   .search-content {
     display: flex;
     margin-top: 40px;
@@ -478,18 +425,14 @@ html{
 
 /* Extra small screens */
 @media (max-width: 576px) {
-  .home-content h1 {
-    font-size: 2rem;
-  }
+  
   .top-bar {
     flex-direction: row;
    
     font-size: 8px;
     padding: 4px 10px;
   }
-  .home-content p {
-    font-size: 1rem;
-  }
+  
   .btn {
     font-size: 0.9rem;
     padding: 10px 20px;
@@ -542,14 +485,15 @@ html{
 
 
  .home-section {
-  height: 70vh;
-  background: url("../../image/breadcrumb_bg.jpg") no-repeat center center/cover;
+  height: 90vh;
+  background: url("../../image/s_slider_bg02.jpg") no-repeat center center/cover;
   display: flex;
   align-items: center;       /* vertical center */
-  justify-content: center;   /* horizontal center */
+  justify-content: left;   /* horizontal center */
   color: white;
   position: relative;
-  text-align: center;        /* text bhi center aligned */
+  
+  /* text-align: center;        text bhi center aligned */
   padding: 0;
                 /* left padding hata diya */
 }
@@ -567,14 +511,31 @@ html{
 .home-content {
   position: relative;
   max-width: 600px;
+ margin-left: 70px;
+ margin-top: 50px;
 }
 
 .home-content h1 {
-  font-size: 3rem;
-  font-family: 'League Spartan', sans-serif;
+  font-size: 4rem;
+  font-family: 'poppins', sans-serif;
   font-weight: 900;
   margin-bottom: 10px;
+   color: #ffffff;
 }
+
+.home-content h1 span{
+  
+    display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #e74c3c;
+  color: #fff;
+  align-items: center;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 100px;
+}
+
 
 .home-content p {
   font-size: 1.2rem;
@@ -582,22 +543,23 @@ html{
   line-height: 1.5;
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
-  color: #cfcfcf;
+  color: #ffffff;
 }
 
 .btn {
   padding: 12px 25px;
-  background: #ff8560;
+  background:  #e74c3c;
   border: none;
-  border-radius: 6px;
+  /* border-radius: 6px; */
   color: white;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
+  margin-top: 10px;
   cursor: pointer;
   transition: background 0.3s;
 }
 .btn:hover {
-  background: #ff5d2c;
+  background:  #cb493a;
 }
 
 
@@ -606,7 +568,7 @@ html{
 /* Mobile screens ke liye adjustment */
 @media (max-width: 768px) {
   .home-section {
-
+    height: 70vh;
     background-position: 85% center;
     padding-left: 20px; /* text thoda adjust */
     text-align: center; /* text center aligned for mobile */
@@ -614,11 +576,13 @@ html{
   }
 
   .home-content {
+    display: none;
     max-width: 90%; /* text responsive width */
   }
 
   .home-content h1 {
     font-size: 2rem;
+    
   }
 
   .home-content p {
@@ -657,8 +621,9 @@ html{
  
  
  /* home section start end  */
- 
- 
+
+
+
  
  
  
@@ -1240,3 +1205,213 @@ color: brown
         flex-direction: column;
       }
     }
+
+
+
+
+
+
+
+
+    .fc-footer {
+      background: #fdfaf6;
+      width: 100%;
+      padding: 50px 20px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+      font-family: Arial, sans-serif;
+    }
+
+    
+    .fc-footer-left h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 26px;
+      color: #0f3d3e;
+    }
+
+    .fc-footer-left {
+      flex: 1 1 250px;
+    }
+
+    .fc-footer-left p {
+      color: #444;
+      margin: 15px 0;
+      line-height: 1.6;
+    }
+
+    .fc-call {
+      font-size: 20px;
+      font-weight: bold;
+      color: #0f3d3e;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 15px 0;
+    }
+
+    .fc-call span {
+      display: block;
+      font-size: 14px;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .fc-social-icons a {
+      margin-right: 10px;
+      color: #444; 
+      font-size: 18px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .fc-social-icons a:hover {
+      color: #000; 
+    }
+
+    .fc-footer-col {
+      flex: 1 1 200px;
+    }
+
+    .fc-footer-col h3 {
+      margin-bottom: 15px;
+      font-size: 18px;
+      color: #0f3d3e;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 900;
+    }
+
+    .fc-footer-col ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .fc-footer-col ul li {
+      margin-bottom: 10px;
+    }
+
+    .fc-footer-col ul li a {
+      text-decoration: none;
+      color: #444; 
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .fc-footer-col ul li a:hover {
+      color: #000; 
+    }
+
+    .fc-instagram {
+      display: grid;
+      grid-template-columns: repeat(3, 80px);
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .fc-instagram img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .fc-footer-bottom {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      padding: 15px;
+      background: #fdfaf6;
+      border-top: 1px solid #ddd;
+      font-family: Arial, sans-serif;
+      width: 100%;
+    }
+
+     
+    @media (max-width: 992px) {
+      .fc-footer {
+        flex-direction: column;
+        align-items: flex-start; 
+        text-align: left;
+      }
+      .fc-footer-col, 
+      .fc-footer-left {
+        width: 100%;
+      }
+      
+      .fc-instagram {
+        justify-content: center;
+      }
+    } 
+
+     @media (max-width: 768px) {
+      .fc-footer {
+        flex-direction: column;
+        align-items: flex-start; 
+        text-align: left;
+      }
+      .fc-footer-col, 
+      .fc-footer-left {
+        width: 100%;
+      }
+      
+      .fc-instagram {
+        justify-content: center;
+      }
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+ #pageOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;  
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1s ease; 
+} 
+
+
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff; /* dark effect chahiye to rgba(0,0,0,0.7) */
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.loading-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.loader-gif {
+  width: 120px; /* apne GIF ka size set kar lo */
+  height: auto;
+}

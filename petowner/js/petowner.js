@@ -8,7 +8,7 @@
 
   // ✅ Search keywords + synonyms
   const searchMap = {
-    "home": "petowner.html",
+    "home": "#homesection",
     "about": "#about",
     "pet profile": "#petprofile",
     "feeding profile": "#feeding",

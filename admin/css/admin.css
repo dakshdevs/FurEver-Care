@@ -233,6 +233,7 @@ html{
   padding: 10px 15px;
   border-bottom: 1px solid #ddd;
   cursor: pointer;
+  font-family: 'poppins', sans-serif;
 }
 #suggestions li:hover {
   background: #f2f2f2;

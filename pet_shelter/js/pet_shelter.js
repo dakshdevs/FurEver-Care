@@ -8,31 +8,13 @@
 
   // ✅ Search keywords + synonyms
   const searchMap = {
-    "home": "#home",
-    "pet profile": "#owner-profile",
-    "dog profile": "#owner-profile",
-    "cat profile": "#owner-profile",
-    "feeding guide": "#owner-feeding",
-    "grooming": "#owner-grooming",
-    "health tips": "#owner-health",
-    "medicine": "#owner-health",
-    "training": "#owner-training",
-    "products": "#owner-products",
-    "emergency": "#owner-emergency",
-    "feedback": "#owner-feedback",
-    "contact": "#owner-contact",
-    "about": "#owner-about",
-    "vet": "#vet-profile",
-    "doctor": "#vet-profile",
-    "veterinarian": "#vet-profile",
-    "slots": "#vet-slots",
-    "case studies": "#vet-cases",
-    "adopt": "#shelter-adopt",
-    "adopt dog": "#shelter-adopt",
-    "adopt cat": "#shelter-adopt",
-    "stories": "#shelter-stories",
-    "events": "#shelter-events",
-    "shelter contact": "#shelter-contact"
+    "home": "#homesection",
+    "about": "#about",
+    "pets": "#petadoption",
+    "events": "#events",
+    "stories": "#stories",
+    "contact": "#contact"
+    
   };
 
   // Open overlay
